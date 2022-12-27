@@ -1,54 +1,35 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://simonyi.bme.hu">
+    <img alt="Simonyi" src="https://warp.sch.bme.hu/images/simonyi-1" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal TypeScript starter
+  Simonyi Károly College for Advanced Studies<br />
+  website written with Gatsby v5
 </h1>
 
-## 🚀 Quick start
+## Development
 
-1.  **Create a Gatsby site.**
+```sh
+yarn # install dependencies
+yarn start # start dev server
+```
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+Your site is now running at <http://localhost:8000>!
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby
-    ```
+Edit `src/pages/index.tsx` to see your site update in real-time!
 
-2.  **Start developing.**
+## Learn more from Gatsby
 
-    Navigate into your new site’s directory and start it up.
+- [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+- [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+- [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+- [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+- [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+- [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## Deployment
 
-3.  **Open the code and start customizing!**
+Deployed in [Kir-Dev's Vercel workspace](https://vercel.com/kir-dev/simonyi-web-gatsby) under simonyi-web-gatsby.
 
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.tsx` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+See `.env.example` file for required environment variables to be set. For Google Analytics, use the [Analytics site](https://analytics.google.com/analytics/web), find the account and property needed (contact piller.trisztan@simonyi.bme.hu for further settings).
