@@ -11,13 +11,14 @@
 ## Development
 
 ```sh
-yarn # install dependencies
 yarn start # start dev server
 ```
 
 Your site is now running at <http://localhost:8000>!
 
 Edit `src/pages/index.tsx` to see your site update in real-time!
+
+(The project uses Yarn v3 Plug'n'Play zero-installs philosophy.)
 
 ## Learn more from Gatsby
 
