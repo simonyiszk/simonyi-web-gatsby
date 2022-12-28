@@ -6,6 +6,10 @@ const theme = {
   colors: {
     primary: 'rebeccapurple',
   },
+  fonts: {
+    heading: 'Archivo, sans-serif',
+    body: '"Space Grotesk", sans-serif'
+  }
 }
 
 export default extendTheme(theme)
