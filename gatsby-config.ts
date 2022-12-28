@@ -1,8 +1,9 @@
-import type { GatsbyConfig } from "gatsby";
+import type { GatsbyConfig } from 'gatsby';
 
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+});
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -15,12 +16,12 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    "@chakra-ui/gatsby-plugin", 
-    "gatsby-plugin-sitemap", 
+    '@chakra-ui/gatsby-plugin',
+    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        "icon": "src/images/simonyi-simple-512.png"
+        icon: 'src/images/simonyi-simple-512.png'
       }
     },
 
@@ -28,38 +29,38 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        gatsbyRemarkPlugins: [],
-      },
+        gatsbyRemarkPlugins: []
+      }
     },
 
-    /* See: https://www.gatsbyjs.com/plugins/gatsby-plugin-image/ */ 
-    "gatsby-plugin-image", 
-    "gatsby-plugin-sharp", 
-    "gatsby-transformer-sharp", 
+    /* See: https://www.gatsbyjs.com/plugins/gatsby-plugin-image/ */
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
 
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        "name": "images",
-        "path": "./src/images/"
+        name: 'images',
+        path: './src/images/'
       },
-      __key: "images"
-    }, 
+      __key: 'images'
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        "name": "pages",
-        "path": "./src/pages/"
+        name: 'pages',
+        path: './src/pages/'
       },
-      __key: "pages"
-    }, 
+      __key: 'pages'
+    },
 
     /* See: https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/ */
     {
-        resolve: `gatsby-plugin-google-gtag`,
-        options: {
-          trackingIds: [process.env.GOOGLE_ANALYTICS_ID]
-        },
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [process.env.GOOGLE_ANALYTICS_ID]
+      }
     }
   ]
 };
