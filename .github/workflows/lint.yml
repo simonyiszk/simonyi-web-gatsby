@@ -35,8 +35,11 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install Node.js dependencies
-        run: npm ci
+      - name: Install Yarn
+        run: npm install -g yarn
+
+      - name: Install Node.js dependencies using Yarn
+        run: yarn install --frozen-lockfile
 
       - name: Run linters
         uses: wearerequired/lint-action@v2
