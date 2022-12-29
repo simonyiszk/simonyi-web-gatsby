@@ -1,5 +1,5 @@
 {
   // See https://go.microsoft.com/fwlink/?LinkId=827846
   // for the documentation about the extensions.json format
-  "recommendations": []
+  "recommendations": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint", "rvest.vs-code-prettier-eslint"]
 }
