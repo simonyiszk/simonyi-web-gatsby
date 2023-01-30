@@ -6,7 +6,7 @@ const config = {
   initialColorMode: 'dark'
 };
 
-const theme = extendTheme({
+const theme = {
   fonts: {
     // https://www.figma.com/file/JOHGaqs67K52ZSj32xF8Bd/Weboldal?node-id=12%3A1076
     heading: 'Archivo, sans-serif',
@@ -59,6 +59,7 @@ const theme = extendTheme({
     }),
     ...config
   }
-});
+};
 
-export default theme;
+export default extendTheme(theme);
+export const baseTheme = {};
