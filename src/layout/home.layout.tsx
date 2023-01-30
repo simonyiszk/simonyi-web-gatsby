@@ -1,15 +1,8 @@
 import React from 'react';
-import { Footer } from '../components/footer';
-import { Header } from '../components/header';
+import { Box } from '@chakra-ui/react';
 
 function HomeLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <>
-      <Header />
-      {children}
-      <Footer />
-    </>
-  );
+  return <Box>{children}</Box>;
 }
 
 export { HomeLayout };
