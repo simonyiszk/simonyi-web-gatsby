@@ -8,8 +8,10 @@ import { InstagramIcon } from './instagram-icon.component';
 import { LinkedInIcon } from './linkedin-icon.component';
 import { PhoneIcon } from './phone-icon.component';
 import { SchonherzIcon } from './schonherz-icon.component';
+import { SimonyiFullDarkIcon, SimonyiFullLightIcon, SimonyiLogoIcon } from './simonyi-icon.component';
 import { VIKIcon } from './vik-icon.component';
 import { YouTubeIcon } from './youtube-icon.component';
+import { SocialIcon } from './social-icon.component';
 
 export {
   ChevronIcon,
@@ -23,5 +25,9 @@ export {
   YouTubeIcon,
   BMEIcon,
   SchonherzIcon,
-  VIKIcon
+  SimonyiFullDarkIcon,
+  SimonyiFullLightIcon,
+  SimonyiLogoIcon,
+  VIKIcon,
+  SocialIcon
 };
