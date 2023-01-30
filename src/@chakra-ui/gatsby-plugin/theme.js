@@ -56,9 +56,9 @@ const theme = {
         lineHeight: 'normal',
         letterSpacing: '0'
       }
-    }),
-    ...config
-  }
+    })
+  },
+  config
 };
 
 export default extendTheme(theme);
