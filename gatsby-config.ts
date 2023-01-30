@@ -21,7 +21,7 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/simonyi-simple-512.png'
+        icon: 'src/images/simonyi-logo.svg'
       }
     },
 
