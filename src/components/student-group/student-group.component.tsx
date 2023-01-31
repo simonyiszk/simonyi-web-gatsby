@@ -41,8 +41,8 @@ function StudentGroup({ name, logoUrl, description, socials = [] }: GroupType) {
         </Box>
         {(!isMobile || isOpen) && (
           <>
-            <Box>
-              <Image src={logoUrl} width="100px" />
+            <Box height="100px">
+              <Image src={logoUrl} height="100%" />
             </Box>
             <Box>
               <Text>{description}</Text>
