@@ -114,6 +114,7 @@ function Studies() {
         flexDirection={{ base: 'column', md: 'row' }}
         gap="32px"
         flexWrap="wrap"
+        width="100%"
       >
         {groups.map((group, index) => (
           <StudentGroup key={index} name={group.name} description={group.description} logoUrl={group.logoUrl} socials={group.socials} />

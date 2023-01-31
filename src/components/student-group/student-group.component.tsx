@@ -9,6 +9,7 @@ function StudentGroup({ name, logoUrl, description, socials = [] }: GroupType) {
 
   const handleToggle = (e: React.MouseEvent) => {
     e.preventDefault();
+    if (!isMobile) return;
     setIsOpen(!isOpen);
   };
 
@@ -22,19 +23,22 @@ function StudentGroup({ name, logoUrl, description, socials = [] }: GroupType) {
       justifyContent="space-between"
       padding="20px"
       bg="darkmode_regular"
-      maxWidth="330px"
+      maxWidth={{ base: '100%', md: '330px' }}
     >
       <Box width="100%" display="flex" flexDirection="column" alignItems="center" gap="32px">
-        <Box width="100%" display="flex" flexDirection="row" alignItems="center" gap="32px" justifyContent="space-between">
+        <Box
+          width="100%"
+          display="flex"
+          flexDirection="row"
+          alignItems="center"
+          gap="32px"
+          justifyContent="space-between"
+          _hover={{ cursor: 'pointer' }}
+          onClick={(e) => handleToggle(e)}
+        >
           <Text as="h3">{name}</Text>
           {isMobile && (
-            <Box
-              _hover={{ cursor: 'pointer' }}
-              transform={isOpen ? 'scaleY(-1)' : 'scaleY(1)'}
-              onClick={(e) => handleToggle(e)}
-              p="8px"
-              userSelect="none"
-            >
+            <Box p="8px" transform={isOpen ? 'scaleY(-1)' : 'scaleY(1)'}>
               <ChevronIcon fill={isOpen ? 'simonyi_sarga' : 'simonyi_zold'} />
             </Box>
           )}
