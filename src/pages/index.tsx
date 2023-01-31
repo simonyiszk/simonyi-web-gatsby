@@ -10,13 +10,37 @@ import { about, groups, headlines, images, profiles } from '../utils';
 
 function Greeting() {
   return (
-    <Box display="flex" flexDirection="column" minHeight="100vh" justifyContent="space-between" alignItems="center" pb="calc(80px + 2rem)">
-      <HomeHeader />
-      <Box maxWidth={353} maxHeight={75}>
-        <SimonyiFullLightIcon width="100%" height="100%" />
+    <Box minHeight="100vh">
+      <Box
+        zIndex="-1"
+        position="absolute"
+        top="0"
+        left="0"
+        bgColor="red"
+        width="100%"
+        maxWidth="100%"
+        height="100vh"
+        maxHeight="100%"
+        filter="blur(10px)"
+        display="flex"
+      >
+        <Image src="/home-bg/bg-default.png" height="100%" width="100%" objectFit="cover" />
       </Box>
-      <Box>
-        <ChevronIcon fill="light" />
+      <Box
+        display="flex"
+        flexDirection="column"
+        minHeight="100vh"
+        justifyContent="space-between"
+        alignItems="center"
+        pb="calc(80px + 2rem)"
+      >
+        <HomeHeader />
+        <Box maxWidth={353} maxHeight={75} m={8}>
+          <SimonyiFullLightIcon width="100%" height="100%" filter="drop-shadow(0 4px 8px rgb(0, 0, 0, 0.6))" />
+        </Box>
+        <Box>
+          <ChevronIcon fill="light" />
+        </Box>
       </Box>
     </Box>
   );
