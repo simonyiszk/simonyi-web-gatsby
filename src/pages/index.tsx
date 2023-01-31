@@ -44,7 +44,7 @@ function Headlines() {
 
 function ImageBrowser() {
   return (
-    <Box display="flex" flexWrap={{ lg: 'wrap' }} gap="10px" overflowX={{ base: 'auto', lg: 'hidden' }}>
+    <Box display="flex" flexWrap={{ md: 'wrap' }} gap="10px" overflowX={{ base: 'scroll', md: 'hidden' }} mx={{ base: -8, md: 0 }}>
       {images.slice(0, 9).map((image, index) => (
         <Box key={index} width="177.05px" height="100px" bgColor="#000000" flexShrink="0">
           <Image src={image.url} alt={image.alt} width="100%" height="100%" />
@@ -69,7 +69,7 @@ function About() {
         <Box flex={{ base: 'unset', lg: '1 1 0' }}>
           <Text>{about.text}</Text>
         </Box>
-        <Box flex={{ base: 'unset', lg: '1 1 0' }} width={{ base: '100%' }}>
+        <Box flex={{ base: 'unset', lg: '1 1 0' }} width={{ base: '100%' }} justifyContent="center">
           <ImageBrowser />
         </Box>
       </Box>
