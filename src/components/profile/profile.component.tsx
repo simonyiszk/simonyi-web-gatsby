@@ -10,29 +10,35 @@ function Profile({ name, title, profilePicture, socials }: ProfileType) {
       flexDirection="column"
       alignItems="center"
       bg="darkmode_regular"
-      borderRadius="16px"
-      padding="16px"
-      gap="16px"
+      borderRadius="1rem"
+      padding="1rem"
+      gap="1rem"
       maxWidth="300px"
+      width="100%"
     >
-      <Image
-        src={profilePicture.url}
-        alt={profilePicture.alt}
-        width="200px"
-        height="200px"
-        borderRadius="50%"
-        borderStyle="solid"
-        borderWidth={2}
-        borderColor="simonyi_zold"
-      />
-      <Text as="h2">{name}</Text>
-      <Text fontSize="20px" fontWeight="regular">
+      <Box width="100%" height="100%" maxWidth="200px" maxHeight="200px">
+        <Image
+          src={profilePicture.url}
+          alt={profilePicture.alt}
+          objectFit="contain"
+          width="100%"
+          height="100%"
+          borderRadius="50%"
+          borderStyle="solid"
+          borderWidth={2}
+          borderColor="simonyi_zold"
+        />
+      </Box>
+      <Text as="h2" align="center">
+        {name}
+      </Text>
+      <Text fontSize="1.25rem" fontWeight="regular" align="center">
         {title}
       </Text>
-      <Box display="flex" justifyContent="center" gap="28px" mt="28px" flexWrap="wrap">
+      <Box display="flex" justifyContent="center" gap="1.75rem" mt="1.75rem" flexWrap="wrap">
         {socials.map((social, index) => (
           <Link href={social.link.url} title={social.link.title} target="_blank" key={index}>
-            <SocialIcon iconName={social.icon} props={{ boxSize: '24px', fill: 'simonyi_zold' }} />
+            <SocialIcon iconName={social.icon} props={{ boxSize: '1.5rem', fill: 'simonyi_zold' }} />
           </Link>
         ))}
       </Box>
