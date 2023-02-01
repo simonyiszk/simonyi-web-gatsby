@@ -126,18 +126,11 @@ function Studies() {
 
 function Leadership() {
   return (
-    <Box display="flex" flexDirection="column" gap="32px" pb="calc(80px + 2rem)">
+    <Box display="flex" flexDirection="column" gap="2rem" pb="calc(80px + 2rem)">
       <Box alignSelf={{ base: 'center', md: 'flex-start' }}>
         <Text as="h1">Vezetőség</Text>
       </Box>
-      <Box
-        alignSelf="center"
-        display="flex"
-        justifyContent="center"
-        flexDirection={{ base: 'column', md: 'row' }}
-        gap="32px"
-        flexWrap="wrap"
-      >
+      <Box alignSelf="center" display="flex" justifyContent="center" flexDirection="row" gap="2rem" flexWrap="wrap" width="100%">
         {profiles.map((profile, index) => (
           <Profile
             key={index}
