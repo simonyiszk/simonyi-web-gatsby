@@ -58,7 +58,7 @@ function Headlines() {
       pb="calc(80px + 2rem)"
     >
       {headlines.map((headline, index) => (
-        <Box key={index}>
+        <Box key={index} width="250px">
           <Text as="h1" textAlign="center" dangerouslySetInnerHTML={{ __html: headline }} />
         </Box>
       ))}
