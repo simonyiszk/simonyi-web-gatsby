@@ -16,7 +16,7 @@ function Greeting() {
         position="absolute"
         top="0"
         left="0"
-        bgColor="red"
+        bgColor="black"
         width="100%"
         maxWidth="100%"
         height="100vh"
