@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon, IconProps } from '@chakra-ui/react';
-import { EmailIcon, FacebookIcon, GlobeIcon, InstagramIcon, LinkedInIcon, PhoneIcon, YouTubeIcon } from '../icons';
+import { EmailIcon, FacebookIcon, GitHubIcon, GlobeIcon, InstagramIcon, LinkedInIcon, PhoneIcon, YouTubeIcon } from '../icons';
 import { SocialIconType } from '../../types';
 
 function SocialIcon({ iconName, props }: { iconName: string; props?: IconProps }) {
@@ -9,6 +9,8 @@ function SocialIcon({ iconName, props }: { iconName: string; props?: IconProps }
       return <Icon as={EmailIcon} {...props} />;
     case 'facebook':
       return <Icon as={FacebookIcon} {...props} />;
+    case 'github':
+      return <Icon as={GitHubIcon} {...props} />;
     case 'instagram':
       return <Icon as={InstagramIcon} {...props} />;
     case 'linkedin':

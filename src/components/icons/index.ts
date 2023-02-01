@@ -2,6 +2,7 @@ import { BMEIcon } from './bme-icon.component';
 import { ChevronIcon } from './chevron-icon.component';
 import { EmailIcon } from './email-icon.component';
 import { FacebookIcon } from './facebook-icon.component';
+import { GitHubIcon } from './github-icon.component';
 import { GlobeIcon } from './globe-icon.component';
 import { IncreaseIcon } from './increase-icon.component';
 import { InstagramIcon } from './instagram-icon.component';
@@ -17,6 +18,7 @@ export {
   ChevronIcon,
   EmailIcon,
   FacebookIcon,
+  GitHubIcon,
   GlobeIcon,
   IncreaseIcon,
   InstagramIcon,

@@ -1,4 +1,4 @@
-type SocialIconType = 'email' | 'facebook' | 'instagram' | 'linkedin' | 'phone' | 'youtube' | 'website';
+type SocialIconType = 'email' | 'facebook' | 'github' | 'instagram' | 'linkedin' | 'phone' | 'youtube' | 'website';
 
 type AboutType = {
   title: string;
