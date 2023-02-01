@@ -16,7 +16,7 @@ function HomeFooter() {
           <SchonherzIcon w="10.5rem" h="3.75rem" fill="light" />
         </Link>
       </Box>
-      <Text>1117 Budapest, Irinyi József utca 42, 13/19</Text>
+      <Text align="center">1117 Budapest, Irinyi József utca 42, 13/19</Text>
     </Box>
   );
 }
