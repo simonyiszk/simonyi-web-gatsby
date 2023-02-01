@@ -10,13 +10,19 @@ type ImageType = {
   alt: string;
 };
 
-type SocialType = {
-  socialIcon: SocialIconType;
+type LinkType = {
   url: string;
+  title: string;
+  text: string;
+};
+
+type SocialType = {
+  icon: SocialIconType;
+  link: LinkType;
 };
 
 type ProfileType = {
-  profilePictureUrl: string;
+  profilePicture: ImageType;
   name: string;
   title: string;
   socials: SocialType[];
@@ -24,7 +30,7 @@ type ProfileType = {
 
 type GroupType = {
   name: string;
-  logoUrl: string;
+  logo: ImageType;
   description: string;
   socials: SocialType[];
 };

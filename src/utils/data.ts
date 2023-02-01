@@ -12,86 +12,33 @@ const headlines: Array<string> = [
 ];
 
 const images: Array<ImageType> = [
-  { url: '', alt: '' },
-  { url: '', alt: '' },
-  { url: '', alt: '' },
-  { url: '', alt: '' },
-  { url: '', alt: '' },
-  { url: '', alt: '' },
-  { url: '', alt: '' },
-  { url: '', alt: '' },
-  { url: '', alt: '' }
+  { url: '/home-bg/bg-buli.png', alt: 'bulis kep' },
+  { url: '/home-bg/bg-default.png', alt: 'default kep' },
+  { url: '/home-bg/bg-poharak.png', alt: 'poharak kep' },
+  { url: '/home-bg/bg-poharak.png', alt: 'poharak kep' },
+  { url: '/home-bg/bg-buli.png', alt: 'bulis kep' },
+  { url: '/home-bg/bg-default.png', alt: 'default kep' },
+  { url: '/home-bg/bg-default.png', alt: 'default kep' },
+  { url: '/home-bg/bg-poharak.png', alt: 'poharak kep' },
+  { url: '/home-bg/bg-buli.png', alt: 'bulis kep' }
 ];
 
 const profiles: Array<ProfileType> = [
   {
-    profilePictureUrl: '/default.png',
+    profilePicture: {
+      url: '/default.png',
+      alt: 'Piller Trisztán'
+    },
     name: 'Piller Trisztán',
     title: 'Elnök',
     socials: [
-      { socialIcon: 'email', url: 'mailto:user@example.com' },
-      { socialIcon: 'facebook', url: 'https://facebook.com' },
-      { socialIcon: 'instagram', url: 'https://instagram.com' },
-      { socialIcon: 'linkedin', url: 'https://linkedin.com' },
-      { socialIcon: 'phone', url: 'tel://+36000000000' },
-      { socialIcon: 'youtube', url: 'https://youtube.com' },
-      { socialIcon: 'website', url: 'https://example.com' }
-    ]
-  },
-  {
-    profilePictureUrl: '/default.png',
-    name: 'Piller Trisztán',
-    title: 'Elnök',
-    socials: [
-      { socialIcon: 'email', url: 'mailto:user@example.com' },
-      { socialIcon: 'facebook', url: 'https://facebook.com' },
-      { socialIcon: 'instagram', url: 'https://instagram.com' },
-      { socialIcon: 'linkedin', url: 'https://linkedin.com' },
-      { socialIcon: 'phone', url: 'tel://+36000000000' },
-      { socialIcon: 'youtube', url: 'https://youtube.com' },
-      { socialIcon: 'website', url: 'https://example.com' }
-    ]
-  },
-  {
-    profilePictureUrl: '/default.png',
-    name: 'Piller Trisztán',
-    title: 'Elnök',
-    socials: [
-      { socialIcon: 'email', url: 'mailto:user@example.com' },
-      { socialIcon: 'facebook', url: 'https://facebook.com' },
-      { socialIcon: 'instagram', url: 'https://instagram.com' },
-      { socialIcon: 'linkedin', url: 'https://linkedin.com' },
-      { socialIcon: 'phone', url: 'tel://+36000000000' },
-      { socialIcon: 'youtube', url: 'https://youtube.com' },
-      { socialIcon: 'website', url: 'https://example.com' }
-    ]
-  },
-  {
-    profilePictureUrl: '/default.png',
-    name: 'Piller Trisztán',
-    title: 'Elnök',
-    socials: [
-      { socialIcon: 'email', url: 'mailto:user@example.com' },
-      { socialIcon: 'facebook', url: 'https://facebook.com' },
-      { socialIcon: 'instagram', url: 'https://instagram.com' },
-      { socialIcon: 'linkedin', url: 'https://linkedin.com' },
-      { socialIcon: 'phone', url: 'tel://+36000000000' },
-      { socialIcon: 'youtube', url: 'https://youtube.com' },
-      { socialIcon: 'website', url: 'https://example.com' }
-    ]
-  },
-  {
-    profilePictureUrl: '/default.png',
-    name: 'Piller Trisztán',
-    title: 'Elnök',
-    socials: [
-      { socialIcon: 'email', url: 'mailto:user@example.com' },
-      { socialIcon: 'facebook', url: 'https://facebook.com' },
-      { socialIcon: 'instagram', url: 'https://instagram.com' },
-      { socialIcon: 'linkedin', url: 'https://linkedin.com' },
-      { socialIcon: 'phone', url: 'tel://+36000000000' },
-      { socialIcon: 'youtube', url: 'https://youtube.com' },
-      { socialIcon: 'website', url: 'https://example.com' }
+      { icon: 'email', link: { url: 'mailto:user@example.com', title: '', text: '' } },
+      { icon: 'facebook', link: { url: 'https://facebook.com', title: '', text: '' } },
+      { icon: 'instagram', link: { url: 'https://instagram.com', title: '', text: '' } },
+      { icon: 'linkedin', link: { url: 'https://linkedin.com', title: '', text: '' } },
+      { icon: 'phone', link: { url: 'tel://+36000000000', title: '', text: '' } },
+      { icon: 'youtube', link: { url: 'https://youtube.com', title: '', text: '' } },
+      { icon: 'website', link: { url: 'https://example.com', title: '', text: '' } }
     ]
   }
 ];
@@ -99,102 +46,155 @@ const profiles: Array<ProfileType> = [
 const groups: Array<GroupType> = [
   {
     name: 'AC Studio & Live',
-    logoUrl: '/AC.svg',
+    logo: {
+      url: '/AC.svg',
+      alt: ''
+    },
     description:
       'Az AC Studio & Live felel a kollégiumban tartott kisebb-nagyobb rendezvények hangosításáért és fénytechnikájáért, továbbá kezelik, üzemeltetik és karbantartják a kollégium rendezvénytechnikai eszközparkját. A kör gazdagon felszerelt hangstúdiója alkalmas kisebb zenekarok, együttesek többsávos felvételeinek elkészítésére is, amit rajtuk kívül kollégiumibandák és a Qpa csapatai is igénybe szoktak venni.',
     socials: [
-      { socialIcon: 'website', url: 'https://acstudio.sch.bme.hu/' },
-      { socialIcon: 'email', url: 'mailto:ac-info@simonyi.bme.hu' },
-      { socialIcon: 'facebook', url: 'https://www.facebook.com/acstudiolive/' }
+      {
+        icon: 'website',
+        link: { url: 'https://acstudio.sch.bme.hu/', title: 'acstudio.sch.bme.hu', text: 'https://acstudio.sch.bme.hu/' }
+      },
+      { icon: 'email', link: { url: 'mailto:ac-info@simonyi.bme.hu', title: 'ac-info@simonyi.bme.hu', text: 'ac-info@simonyi.bme.hu' } },
+      {
+        icon: 'facebook',
+        link: { url: 'https://www.facebook.com/acstudiolive/', title: 'www.facebook.com/acstudiolive', text: '/acstudiolive' }
+      }
     ]
   },
   {
     name: 'Budavári Schönherz Stúdió',
-    logoUrl: '/BSS.svg',
+    logo: {
+      url: '/BSS.svg',
+      alt: ''
+    },
     description:
       'A Budavári Schönherz Stúdiót legtöbben a hetente jelentkező élő online televízióadásairól és a rendezvények közvetítéséről, megörökítéséről ismerik. Ott voltak a Gólyatáborban, a Gólyahéten, a QPA-n, profi eszközeikkel pedig az év további részében is olyan tartalmat közvetítenek, amiért megéri online maradni csütörtök esténként: program- és filmajánlók, rendezvénybeszámolók, interjúk és élő felvételek zenekarokkal, tanárokkal vagy diákokkal és sok minden más. Az ezzel járó szerkesztési és technikai feladatokat is a kör tagjai végzik.',
     socials: [
-      { socialIcon: 'website', url: 'https://bsstudio.hu/' },
-      { socialIcon: 'email', url: 'mailto:bssinfo@sch.bme.hu' },
-      { socialIcon: 'facebook', url: 'https://www.facebook.com/bsstudio/' },
-      { socialIcon: 'instagram', url: 'https://www.instagram.com/budavari_schonherz_studio/' },
-      { socialIcon: 'youtube', url: 'https://youtube.com/bsstudi0/' }
+      { icon: 'website', link: { url: 'https://bsstudio.hu/', title: 'bsstudio.hu', text: 'https://bsstudio.hu/' } },
+      { icon: 'email', link: { url: 'mailto:bssinfo@sch.bme.hu', title: 'bssinfo@sch.bme.hu', text: 'bssinfo@sch.bme.hu' } },
+      { icon: 'facebook', link: { url: 'https://www.facebook.com/bsstudio/', title: 'www.facebook.com/bsstudio', text: '/bsstudio' } },
+      {
+        icon: 'instagram',
+        link: {
+          url: 'https://www.instagram.com/budavari_schonherz_studio/',
+          title: 'www.instagram.com/budavari_schonherz_studio',
+          text: '@budavari_schonherz_studio'
+        }
+      },
+      { icon: 'youtube', link: { url: 'https://youtube.com/bsstudi0/', title: 'youtube.com/bsstudi0', text: '/bsstudi0' } }
     ]
   },
   {
     name: 'HA5KFU Rádióamatőr Klub',
-    logoUrl: '/HA5KFU.svg',
+    logo: {
+      url: '/HA5KFU.svg',
+      alt: ''
+    },
     description:
       'A HA5KFU Rádióamatőr Klub nevét a hívójeléről kapta. 1954-es alakulásával a Villanykar legrégebbi köre, azóta foglalkoznak a rövidhullámú és URH rádióforgalmazással, műholdas kommunikációval és szoftverrádiós technológiákkal. A kollégium legtetején található műhelyükben pedig antennák és áramkörök épülnek, melyek az előbbi technológiákhoz szükségesek.',
     socials: [
-      { socialIcon: 'website', url: 'https://ha5kfu.hu/' },
-      { socialIcon: 'email', url: 'mailto:ha5kfu@simonyi.bme.hu' },
-      { socialIcon: 'facebook', url: 'https://www.facebook.com/ha5kfu/' },
-      { socialIcon: 'instagram', url: 'https://www.instagram.com/ha5kfu/' }
+      { icon: 'website', link: { url: 'https://ha5kfu.hu/', title: 'ha5kfu.hu', text: 'https://ha5kfu.hu/' } },
+      { icon: 'email', link: { url: 'mailto:ha5kfu@simonyi.bme.hu', title: 'ha5kfu@simonyi.bme.hu', text: 'ha5kfu@simonyi.bme.hu' } },
+      { icon: 'facebook', link: { url: 'https://www.facebook.com/ha5kfu/', title: 'www.facebook.com/ha5kfu', text: '/ha5kfu' } },
+      { icon: 'instagram', link: { url: 'https://www.instagram.com/ha5kfu/', title: 'www.instagram.com/ha5kfu', text: '@ha5kfu' } }
     ]
   },
   {
     name: 'Kir-Dev',
-    logoUrl: '/Kir-Dev.svg',
+    logo: {
+      url: '/Kir-Dev.svg',
+      alt: ''
+    },
     description:
       'A Kir-Dev, vagyis a Kollégiumi Információs Rendszer Fejlesztők és Üzemeltetők 2001-ben alakult, és webfejlesztéssel, webes alkalmazások üzemeltetésével, oktatásával foglalkozik. Ők fejlesztik folyamatosan a PéK (Profil és Körök) alkalmazást, amely ma már több mint 30000 felhasználóval rendelkezik. Emellett a Qpa, G7 és SCHPincér weboldalakat is a kör tagjai készítették. A leggyakrabban használt technológiáik közé tartoznak a nyílt forráskódú Ruby on Rails, Node.js, React és Spring Boot keretrendszerek. A kör által készített összes alkalmazás nyílt forráskódú, megtekinthető GitHubon.',
     socials: [
-      { socialIcon: 'website', url: 'https://kir-dev.hu/' },
-      { socialIcon: 'email', url: 'mailto:kir-dev@sch.bme.hu' },
-      { socialIcon: 'facebook', url: 'https://facebook.com/kirdevteam/' }
+      { icon: 'website', link: { url: 'https://kir-dev.hu/', title: 'kir-dev.hu', text: 'https://kir-dev.hu/' } },
+      { icon: 'email', link: { url: 'mailto:kir-dev@sch.bme.hu', title: 'kir-dev@sch.bme.hu', text: 'kir-dev@sch.bme.hu' } },
+      { icon: 'facebook', link: { url: 'https://facebook.com/kirdevteam/', title: 'facebook.com/kirdevteam', text: '/kirdevteam' } }
     ]
   },
   {
     name: 'LEGO Kör',
-    logoUrl: '/LEGO.svg',
+    logo: {
+      url: '/LEGO.svg',
+      alt: ''
+    },
     description:
       'A LEGO Kör nevét a LEGO Mindstorms-ról kapta, ugyanis hosszú ideig ezen eszközök fejlesztése volt a fő profiljuk. Mára nem csak ezzel foglalkoznak, nyitottak a mesterséges intelligencia, az ipari irányítástechnika, az űrtechnológia és az alternatív irányításmódok felé is. Eszközparkjuk lehetőséget nyújt az innovatív ötletek megvalósításához. Náluk bárki megtalálhatja a számára megfelelő szakterületet.',
     socials: [
-      { socialIcon: 'website', url: 'https://legokor.hu/' },
-      { socialIcon: 'email', url: 'mailto:lego@sch.bme.hu' },
-      { socialIcon: 'facebook', url: 'https://facebook.com/Legokor/' }
+      { icon: 'website', link: { url: 'https://legokor.hu/', title: 'legokor.hu', text: 'https://legokor.hu/' } },
+      { icon: 'email', link: { url: 'mailto:lego@sch.bme.hu', title: 'lego@sch.bme.hu', text: 'lego@sch.bme.hu' } },
+      { icon: 'facebook', link: { url: 'https://facebook.com/Legokor/', title: 'facebook.com/Legokor', text: '/Legokor' } }
     ]
   },
   {
     name: 'Menedzsment Kör',
-    logoUrl: '/MGMT.svg',
+    logo: {
+      url: '/MGMT.svg',
+      alt: ''
+    },
     description:
       'A MGMT a szakkolis rendezvények megszervezésével, a szakkoli társadalmi felelősségvállalásával foglalkozik. A tagok marketing-, PR-, HR és gazdaságis tapasztalatokra is szert tehetnek nálunk. Főbb rendezvényeink a Félévnyitó & Felvételi Vacsorák, a Szakmai Hét, a Simonyi Nyári Tábor, illetve a Simonyi Szülinap, ahová az ország szakkollégiumaiból érkeznek vendégek. A körben kapott menedzsment készségekkel és tapasztalatokkal felruházott szakkollégista az itt megszerzett tudást nemcsak az egyetemi pályafutása során, hanem annak befejezése után is számos területen tudja kamatoztatni.',
-    socials: [{ socialIcon: 'email', url: 'mailto:mgmt@simonyi.bme.hu' }]
+    socials: [{ icon: 'email', link: { url: 'mailto:mgmt@simonyi.bme.hu', title: 'mgmt@simonyi.bme.hu', text: 'mgmt@simonyi.bme.hu' } }]
   },
   {
     name: 'schdesign',
-    logoUrl: '/schdesign.svg',
+    logo: {
+      url: '/schdesign.svg',
+      alt: ''
+    },
     description:
       'A Simonyi Károly Szakkollégium kreatív alkotóműhelyeként a kör feladata a különböző digitális műfajok ápolása, mint például az arculattervezés, a logótervezés, a webdesign, a UX design, a 3D modellezés vagy a nyomtatott grafikák készítése. Mindezt valós projekteken teszik – egyik legnagyobb munkájuk az évről évre megrendezésre kerülő Simonyi Konferencia és a Schönherz QPA arculatának megtervezése.',
     socials: [
-      { socialIcon: 'website', url: 'https://schdesign.hu/' },
-      { socialIcon: 'email', url: 'mailto:hello@schdesign.hu' },
-      { socialIcon: 'facebook', url: 'https://www.facebook.com/schdesignbme/' },
-      { socialIcon: 'instagram', url: 'https://www.instagram.com/schdesign.hu/' }
+      { icon: 'website', link: { url: 'https://schdesign.hu/', title: 'schdesign.hu', text: 'https://schdesign.hu/' } },
+      { icon: 'email', link: { url: 'mailto:hello@schdesign.hu', title: 'hello@schdesign.hu', text: 'hello@schdesign.hu' } },
+      {
+        icon: 'facebook',
+        link: { url: 'https://www.facebook.com/schdesignbme/', title: 'www.facebook.com/schdesignbme', text: '/schdesignbme' }
+      },
+      {
+        icon: 'instagram',
+        link: { url: 'https://www.instagram.com/schdesign.hu/', title: 'www.instagram.com/schdesign.hu', text: '@schdesign.hu' }
+      }
     ]
   },
   {
     name: 'Schönherz Elektronikai Műhely',
-    logoUrl: '/SEM.svg',
+    logo: {
+      url: '/SEM.svg',
+      alt: ''
+    },
     description:
       'A Schönherz Elektronikai Műhely a kollégium gyakorlatias villanyos és informatikus szakembereit fogja össze. A munkák elvégzésére egy felszerelt műhely áll a hallgatók rendelkezésre: a villamos fejlesztésekhez oszcilloszkóp, labortápegységek, forrasztási felszerelés és barkácsoláshoz szükséges alapanyagok, barkácsgépek. Jól felszerelt műhelyünkben ötleteidnek csak a kitartásod szabhat határt!',
     socials: [
-      { socialIcon: 'website', url: 'https://sem.sch.bme.hu/' },
-      { socialIcon: 'email', url: 'mailto:sem@sch.bme.hu' },
-      { socialIcon: 'facebook', url: 'https://www.facebook.com/SchonherzElektronikaiMuhely/' }
+      { icon: 'website', link: { url: 'https://sem.sch.bme.hu/', title: 'sem.sch.bme.hu', text: 'https://sem.sch.bme.hu/' } },
+      { icon: 'email', link: { url: 'mailto:sem@sch.bme.hu', title: 'sem@sch.bme.hu', text: 'sem@sch.bme.hu' } },
+      {
+        icon: 'facebook',
+        link: {
+          url: 'https://www.facebook.com/SchonherzElektronikaiMuhely/',
+          title: 'www.facebook.com/SchonherzElektronikaiMuhely',
+          text: '/SchonherzElektronikaiMuhely'
+        }
+      }
     ]
   },
   {
     name: 'SPOT',
-    logoUrl: '/SPOT.svg',
+    logo: {
+      url: '/SPOT.svg',
+      alt: ''
+    },
     description:
       'A kör tagjai minden villanykari eseményen részt vesznek, és fényképek formájában dokumentálják azokat. Emellett sokat fotóznak a Schönherz Kollégium 1419-es klubszobájában található műtermükben is, számos villanykaros önéletrajzában szerepelnek itt készült fotók. Archívumukban hosszú évekre visszamenőleg megtekinthető a villanykari közösség élete, csapatuk pedig folyamatosan fejlődik létszámban, és a belsős képzéseiknek köszönhetően szaktudásban is.',
     socials: [
-      { socialIcon: 'website', url: 'https://spot.sch.bme.hu/' },
-      { socialIcon: 'email', url: 'mailto:spot@simonyi.bme.hu' },
-      { socialIcon: 'facebook', url: 'https://www.facebook.com/bmespot/' },
-      { socialIcon: 'instagram', url: 'https://www.instagram.com/bmespot/' }
+      { icon: 'website', link: { url: 'https://spot.sch.bme.hu/', title: 'spot.sch.bme.hu', text: 'https://spot.sch.bme.hu/' } },
+      { icon: 'email', link: { url: 'mailto:spot@simonyi.bme.hu', title: 'spot@simonyi.bme.hu', text: 'spot@simonyi.bme.hu' } },
+      { icon: 'facebook', link: { url: 'https://www.facebook.com/bmespot/', title: 'www.facebook.com/bmespot', text: '/bmespot' } },
+      { icon: 'instagram', link: { url: 'https://www.instagram.com/bmespot/', title: 'www.instagram.com/bmespot', text: '@bmespot' } }
     ]
   }
 ];

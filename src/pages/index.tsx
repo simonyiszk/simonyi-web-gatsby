@@ -117,7 +117,7 @@ function Studies() {
         width="100%"
       >
         {groups.map((group, index) => (
-          <StudentGroup key={index} name={group.name} description={group.description} logoUrl={group.logoUrl} socials={group.socials} />
+          <StudentGroup key={index} name={group.name} description={group.description} logo={group.logo} socials={group.socials} />
         ))}
       </Box>
     </Box>
@@ -141,7 +141,7 @@ function Leadership() {
         {profiles.map((profile, index) => (
           <Profile
             key={index}
-            profilePictureUrl={profile.profilePictureUrl}
+            profilePicture={profile.profilePicture}
             name={profile.name}
             title={profile.title}
             socials={profile.socials}

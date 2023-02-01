@@ -3,7 +3,7 @@ import { Box, Image, Link, Text } from '@chakra-ui/react';
 import type { ProfileType } from '../../types';
 import { SocialIcon } from '../icons';
 
-function Profile({ name, title, profilePictureUrl, socials }: ProfileType) {
+function Profile({ name, title, profilePicture, socials }: ProfileType) {
   return (
     <Box
       display="flex"
@@ -16,8 +16,8 @@ function Profile({ name, title, profilePictureUrl, socials }: ProfileType) {
       maxWidth="300px"
     >
       <Image
-        src={profilePictureUrl}
-        alt={`Profile picture of ${name}`}
+        src={profilePicture.url}
+        alt={profilePicture.alt}
         width="200px"
         height="200px"
         borderRadius="50%"
@@ -31,8 +31,8 @@ function Profile({ name, title, profilePictureUrl, socials }: ProfileType) {
       </Text>
       <Box display="flex" justifyContent="center" gap="28px" mt="28px" flexWrap="wrap">
         {socials.map((social, index) => (
-          <Link href={social.url} target="_blank" key={index}>
-            <SocialIcon iconName={social.socialIcon} props={{ boxSize: '24px', fill: 'simonyi_zold' }} />
+          <Link href={social.link.url} title={social.link.title} target="_blank" key={index}>
+            <SocialIcon iconName={social.icon} props={{ boxSize: '24px', fill: 'simonyi_zold' }} />
           </Link>
         ))}
       </Box>

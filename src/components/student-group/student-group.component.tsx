@@ -3,7 +3,7 @@ import { Box, Link, Text, Image, useBreakpointValue } from '@chakra-ui/react';
 import { ChevronIcon, SocialIcon } from '../icons';
 import type { GroupType } from '../../types';
 
-function StudentGroup({ name, logoUrl, description, socials = [] }: GroupType) {
+function StudentGroup({ name, logo, description, socials = [] }: GroupType) {
   const [isOpen, setIsOpen] = React.useState(false);
   const isMobile = useBreakpointValue({ base: true, md: false }) as boolean;
 
@@ -46,7 +46,7 @@ function StudentGroup({ name, logoUrl, description, socials = [] }: GroupType) {
         {(!isMobile || isOpen) && (
           <>
             <Box height="100px">
-              <Image src={logoUrl} height="100%" />
+              <Image src={logo.url} alt={logo.alt} height="100%" />
             </Box>
             <Box>
               <Text>{description}</Text>
@@ -57,8 +57,17 @@ function StudentGroup({ name, logoUrl, description, socials = [] }: GroupType) {
       {(!isMobile || isOpen) && (
         <Box display="flex" justifyContent="center" gap="20px" flexWrap="wrap">
           {socials.map((social, index) => (
-            <Link href={social.url} target="_blank" key={index} px="13px" py="6px" bgColor="simonyi_zold" borderRadius="6px">
-              <SocialIcon iconName={social.socialIcon} props={{ boxSize: 4, fill: 'white' }} />
+            <Link
+              href={social.link.url}
+              title={social.link.title}
+              target="_blank"
+              key={index}
+              px="13px"
+              py="6px"
+              bgColor="simonyi_zold"
+              borderRadius="6px"
+            >
+              <SocialIcon iconName={social.icon} props={{ boxSize: 4, fill: 'white' }} />
             </Link>
           ))}
         </Box>
