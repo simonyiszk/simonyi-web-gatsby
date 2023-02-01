@@ -74,7 +74,7 @@ function ImageBrowser() {
       gap="10px"
       overflowX={{ base: 'scroll', md: 'hidden' }}
       mx={{ base: -8, md: 0 }}
-      justifyContent={{ base: 'center', lg: 'flex-end' }}
+      justifyContent={{ base: 'flex-start', md: 'center', lg: 'flex-end' }}
     >
       {images.slice(0, 9).map((image, index) => (
         <Box key={index} width="177.05px" height="100px" bgColor="#000000" flexShrink="0">
@@ -91,7 +91,7 @@ function About() {
       <Text as="h1" mb="32px">
         {about.title}
       </Text>
-      <Box display="grid" gridTemplateColumns={{ base: '1fr', lg: '1fr 1fr' }} gap="70px">
+      <Box display="grid" gridTemplateColumns={{ base: '1fr', lg: '1fr 1fr' }} gap="4rem">
         <Text>{about.text}</Text>
         <ImageBrowser />
       </Box>
