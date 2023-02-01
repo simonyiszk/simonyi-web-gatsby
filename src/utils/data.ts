@@ -32,9 +32,16 @@ const profiles: Array<ProfileType> = [
     name: 'Piller Trisztán',
     title: 'Elnök',
     socials: [
-      { icon: 'email', link: { url: 'mailto:piller.trisztan@simonyi.bme.hu', title: '', text: '' } },
-      { icon: 'github', link: { url: 'https://github.com/triszt4n/', title: '', text: '' } },
-      { icon: 'linkedin', link: { url: 'https://linkedin.com/in/triszt4n/', title: '', text: '' } }
+      {
+        icon: 'email',
+        link: {
+          url: 'mailto:piller.trisztan@simonyi.bme.hu',
+          title: 'piller.trisztan@simonyi.bme.hu',
+          text: 'piller.trisztan@simonyi.bme.hu'
+        }
+      },
+      { icon: 'github', link: { url: 'https://github.com/triszt4n/', title: 'github.com/triszt4n', text: '@triszt4n' } },
+      { icon: 'linkedin', link: { url: 'https://linkedin.com/in/triszt4n/', title: 'linkedin.com/in/triszt4n', text: '@triszt4n' } }
     ]
   },
   {
@@ -44,7 +51,9 @@ const profiles: Array<ProfileType> = [
     },
     name: 'Kis Ákos',
     title: 'Reszortvezető alelnök',
-    socials: [{ icon: 'email', link: { url: 'mailto:kis.akos@simonyi.bme.hu', title: '', text: '' } }]
+    socials: [
+      { icon: 'email', link: { url: 'mailto:kis.akos@simonyi.bme.hu', title: 'kis.akos@simonyi.bme.hu', text: 'kis.akos@simonyi.bme.hu' } }
+    ]
   },
   {
     profilePicture: {
@@ -54,8 +63,18 @@ const profiles: Array<ProfileType> = [
     name: 'Jászberényi Áron',
     title: 'Alelnök',
     socials: [
-      { icon: 'email', link: { url: 'mailto:jaszberenyi.aron@simonyi.bme.hu', title: '', text: '' } },
-      { icon: 'linkedin', link: { url: 'https://linkedin.com/in/aron-jaszberenyi/', title: '', text: '' } }
+      {
+        icon: 'email',
+        link: {
+          url: 'mailto:jaszberenyi.aron@simonyi.bme.hu',
+          title: 'jaszberenyi.aron@simonyi.bme.hu',
+          text: 'jaszberenyi.aron@simonyi.bme.hu'
+        }
+      },
+      {
+        icon: 'linkedin',
+        link: { url: 'https://linkedin.com/in/aron-jaszberenyi/', title: 'linkedin.com/in/aron-jaszberenyi', text: '@aron-jaszberenyi' }
+      }
     ]
   },
   {
@@ -65,7 +84,12 @@ const profiles: Array<ProfileType> = [
     },
     name: 'Püspöki Péter',
     title: 'Alelnök',
-    socials: [{ icon: 'email', link: { url: 'mailto:puspoki.peter@simonyi.bme.hu', title: '', text: '' } }]
+    socials: [
+      {
+        icon: 'email',
+        link: { url: 'mailto:puspoki.peter@simonyi.bme.hu', title: 'puspoki.peter@simonyi.bme.hu', text: 'puspoki.peter@simonyi.bme.hu' }
+      }
+    ]
   }
 ];
 
