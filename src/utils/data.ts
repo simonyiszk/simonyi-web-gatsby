@@ -32,14 +32,40 @@ const profiles: Array<ProfileType> = [
     name: 'Piller Trisztán',
     title: 'Elnök',
     socials: [
-      { icon: 'email', link: { url: 'mailto:user@example.com', title: '', text: '' } },
-      { icon: 'facebook', link: { url: 'https://facebook.com', title: '', text: '' } },
-      { icon: 'instagram', link: { url: 'https://instagram.com', title: '', text: '' } },
-      { icon: 'linkedin', link: { url: 'https://linkedin.com', title: '', text: '' } },
-      { icon: 'phone', link: { url: 'tel://+36000000000', title: '', text: '' } },
-      { icon: 'youtube', link: { url: 'https://youtube.com', title: '', text: '' } },
-      { icon: 'website', link: { url: 'https://example.com', title: '', text: '' } }
+      { icon: 'email', link: { url: 'mailto:piller.trisztan@simonyi.bme.hu', title: '', text: '' } },
+      { icon: 'github', link: { url: 'https://github.com/triszt4n/', title: '', text: '' } },
+      { icon: 'linkedin', link: { url: 'https://linkedin.com/in/triszt4n/', title: '', text: '' } }
     ]
+  },
+  {
+    profilePicture: {
+      url: '/default.png',
+      alt: 'Kis Ákos'
+    },
+    name: 'Kis Ákos',
+    title: 'Reszortvezető alelnök',
+    socials: [{ icon: 'email', link: { url: 'mailto:kis.akos@simonyi.bme.hu', title: '', text: '' } }]
+  },
+  {
+    profilePicture: {
+      url: '/default.png',
+      alt: 'Jászberényi Áron'
+    },
+    name: 'Jászberényi Áron',
+    title: 'Alelnök',
+    socials: [
+      { icon: 'email', link: { url: 'mailto:jaszberenyi.aron@simonyi.bme.hu', title: '', text: '' } },
+      { icon: 'linkedin', link: { url: 'https://linkedin.com/in/aron-jaszberenyi/', title: '', text: '' } }
+    ]
+  },
+  {
+    profilePicture: {
+      url: '/default.png',
+      alt: 'Püspöki Péter'
+    },
+    name: 'Püspöki Péter',
+    title: 'Alelnök',
+    socials: [{ icon: 'email', link: { url: 'mailto:puspoki.peter@simonyi.bme.hu', title: '', text: '' } }]
   }
 ];
 
