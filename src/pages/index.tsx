@@ -6,6 +6,7 @@ import { HomeHeader } from '../components/header';
 import { ChevronIcon, SimonyiFullLightIcon } from '../components/icons';
 import { Profile } from '../components/profile';
 import { StudentGroup } from '../components/student-group';
+import ImageViewer from 'react-simple-image-viewer';
 import { about, groups, headlines, images, profiles } from '../utils';
 
 function Greeting() {
@@ -67,6 +68,19 @@ function Headlines() {
 }
 
 function ImageBrowser() {
+  const [currentImage, setCurrentImage] = React.useState(0);
+  const [isViewerOpen, setIsViewerOpen] = React.useState(false);
+
+  const openImageViewer = React.useCallback((index: number) => {
+    setCurrentImage(index);
+    setIsViewerOpen(true);
+  }, []);
+
+  const closeImageViewer = () => {
+    setCurrentImage(0);
+    setIsViewerOpen(false);
+  };
+
   return (
     <Box
       display="flex"
@@ -77,10 +91,20 @@ function ImageBrowser() {
       justifyContent={{ base: 'flex-start', md: 'center', lg: 'flex-end' }}
     >
       {images.slice(0, 9).map((image, index) => (
-        <Box key={index} width="177.05px" height="100px" bgColor="#000000" flexShrink="0">
+        <Box key={index} width="177.05px" height="100px" bgColor="#000000" flexShrink="0" onClick={() => openImageViewer(index)}>
           <Image src={image.url} alt={image.alt} width="100%" height="100%" />
         </Box>
       ))}
+
+      {isViewerOpen && (
+        <ImageViewer
+          src={images.map((image) => image.url)}
+          currentIndex={currentImage}
+          disableScroll={false}
+          closeOnClickOutside={true}
+          onClose={closeImageViewer}
+        />
+      )}
     </Box>
   );
 }
