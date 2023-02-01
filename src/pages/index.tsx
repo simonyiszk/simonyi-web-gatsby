@@ -106,6 +106,7 @@ function ImageBrowser() {
 
       {isViewerOpen && (
         <ImageViewer
+          backgroundStyle={{ backgroundColor: 'rgba(0,0,0,0.50)', backdropFilter: 'blur(10px)' }}
           src={images.map((image) => image.url)}
           currentIndex={currentImage}
           disableScroll={false}
