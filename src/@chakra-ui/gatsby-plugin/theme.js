@@ -30,28 +30,28 @@ const theme = {
       },
       h1: {
         fontFamily: 'heading',
-        fontSize: '32px',
+        fontSize: '2rem',
         fontWeight: 'semibold',
         lineHeight: 'normal',
         letterSpacing: '0'
       },
       h2: {
         fontFamily: 'heading',
-        fontSize: '24px',
+        fontSize: '1.5rem',
         fontWeight: 'semibold',
         lineHeight: 'normal',
         letterSpacing: '0'
       },
       h3: {
         fontFamily: 'heading',
-        fontSize: '20px',
+        fontSize: '1.25rem',
         fontWeight: 'semibold',
         lineHeight: 'normal',
         letterSpacing: '0'
       },
       h4: {
         fontFamily: 'heading',
-        fontSize: '16px',
+        fontSize: '1rem',
         fontWeight: 'semibold',
         lineHeight: 'normal',
         letterSpacing: '0'
