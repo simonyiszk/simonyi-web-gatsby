@@ -91,7 +91,15 @@ function ImageBrowser() {
       justifyContent={{ base: 'flex-start', md: 'center', lg: 'flex-end' }}
     >
       {images.slice(0, 9).map((image, index) => (
-        <Box key={index} width="177.05px" height="100px" bgColor="#000000" flexShrink="0" onClick={() => openImageViewer(index)}>
+        <Box
+          key={index}
+          width="177.05px"
+          height="100px"
+          bgColor="#000000"
+          flexShrink="0"
+          onClick={() => openImageViewer(index)}
+          _hover={{ cursor: 'pointer' }}
+        >
           <Image src={image.url} alt={image.alt} width="100%" height="100%" />
         </Box>
       ))}
