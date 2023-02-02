@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "description": "simonyi-web-gatsby",
-  "author": "triszt4n",
+  "author": "triszt4n, gergoradeczki",
   "keywords": [
     "gatsby"
   ],
   "scripts": {
     "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "gatsby develop -H 0.0.0.0",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -19,13 +19,14 @@
   },
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "3.1.1",
-    "@chakra-ui/react": "2.4.5",
+    "@chakra-ui/react": "2.4.9",
     "@emotion/react": "11.10.5",
     "@emotion/styled": "11.10.5",
     "@fontsource/archivo": "4.5.10",
     "@fontsource/space-grotesk": "4.5.10",
     "@mdx-js/react": "2.2.1",
-    "framer-motion": "8.0.2",
+    "@vercel/gatsby-plugin-vercel-builder": "1.0.2",
+    "framer-motion": "8.5.4",
     "gatsby": "5.3.3",
     "gatsby-plugin-google-gtag": "5.3.0",
     "gatsby-plugin-image": "3.3.2",
@@ -36,7 +37,8 @@
     "gatsby-source-filesystem": "5.3.1",
     "gatsby-transformer-sharp": "5.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-simple-image-viewer": "1.2.2"
   },
   "devDependencies": {
     "@chakra-ui/cli": "2.3.0",

@@ -2,12 +2,11 @@
 import { extendTheme } from '@chakra-ui/react';
 
 const config = {
-  useSystemColorMode: true,
+  useSystemColorMode: false,
   initialColorMode: 'dark'
 };
 
-const theme = extendTheme({
-  config,
+const theme = {
   fonts: {
     // https://www.figma.com/file/JOHGaqs67K52ZSj32xF8Bd/Weboldal?node-id=12%3A1076
     heading: 'Archivo, sans-serif',
@@ -28,9 +27,39 @@ const theme = extendTheme({
     global: () => ({
       body: {
         bg: 'dark'
+      },
+      h1: {
+        fontFamily: 'heading',
+        fontSize: '2rem',
+        fontWeight: 'semibold',
+        lineHeight: 'normal',
+        letterSpacing: '0'
+      },
+      h2: {
+        fontFamily: 'heading',
+        fontSize: '1.5rem',
+        fontWeight: 'semibold',
+        lineHeight: 'normal',
+        letterSpacing: '0'
+      },
+      h3: {
+        fontFamily: 'heading',
+        fontSize: '1.25rem',
+        fontWeight: 'semibold',
+        lineHeight: 'normal',
+        letterSpacing: '0'
+      },
+      h4: {
+        fontFamily: 'heading',
+        fontSize: '1rem',
+        fontWeight: 'semibold',
+        lineHeight: 'normal',
+        letterSpacing: '0'
       }
     })
-  }
-});
+  },
+  config
+};
 
-export default theme;
+export default extendTheme(theme);
+export const baseTheme = {};
