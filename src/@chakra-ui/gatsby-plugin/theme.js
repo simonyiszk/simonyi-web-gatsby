@@ -62,4 +62,3 @@ const theme = {
 };
 
 export default extendTheme(theme);
-export const baseTheme = {};
