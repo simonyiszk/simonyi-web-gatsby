@@ -61,7 +61,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.8.3"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:18.2.0"],\
-            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
+            ["yet-another-react-lightbox", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:2.3.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -21521,7 +21522,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.8.3"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:18.2.0"],\
-            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
+            ["yet-another-react-lightbox", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:2.3.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -23918,6 +23920,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["yargs-parser", "npm:18.1.3"],\
             ["camelcase", "npm:5.3.1"],\
             ["decamelize", "npm:1.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["yet-another-react-lightbox", [\
+        ["npm:2.3.1", {\
+          "packageLocation": "./.yarn/cache/yet-another-react-lightbox-npm-2.3.1-dfcda23151-e1741524ee.zip/node_modules/yet-another-react-lightbox/",\
+          "packageDependencies": [\
+            ["yet-another-react-lightbox", "npm:2.3.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:2.3.1", {\
+          "packageLocation": "./.yarn/__virtual__/yet-another-react-lightbox-virtual-b9f1d2fccf/0/cache/yet-another-react-lightbox-npm-2.3.1-dfcda23151-e1741524ee.zip/node_modules/yet-another-react-lightbox/",\
+          "packageDependencies": [\
+            ["yet-another-react-lightbox", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:2.3.1"],\
+            ["@types/react", "npm:18.0.27"],\
+            ["@types/react-dom", "npm:18.0.10"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
