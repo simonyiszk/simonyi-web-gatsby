@@ -15031,16 +15031,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-simple-image-viewer@npm:1.2.2":
-  version: 1.2.2
-  resolution: "react-simple-image-viewer@npm:1.2.2"
-  peerDependencies:
-    react: ^18.1.0
-    react-dom: ^18.1.0
-  checksum: 2e5e41d0f7b9f690918f084b8d643163f5dc8320e06c832860cd4867821994a683ab76fdd0702cf2c8cb33ba65e1201a487f0bb2c7c706b5ac8cc642e3f4bbf8
-  languageName: node
-  linkType: hard
-
 "react-style-singleton@npm:^2.2.1":
   version: 2.2.1
   resolution: "react-style-singleton@npm:2.2.1"
@@ -15942,8 +15932,8 @@ __metadata:
     prettier: 2.8.3
     react: 18.2.0
     react-dom: 18.2.0
-    react-simple-image-viewer: 1.2.2
     typescript: 4.9.5
+    yet-another-react-lightbox: 2.3.1
   languageName: unknown
   linkType: soft
 
@@ -17981,6 +17971,16 @@ __metadata:
     y18n: ^4.0.0
     yargs-parser: ^18.1.2
   checksum: 40b974f508d8aed28598087720e086ecd32a5fd3e945e95ea4457da04ee9bdb8bdd17fd91acff36dc5b7f0595a735929c514c40c402416bbb87c03f6fb782373
+  languageName: node
+  linkType: hard
+
+"yet-another-react-lightbox@npm:2.3.1":
+  version: 2.3.1
+  resolution: "yet-another-react-lightbox@npm:2.3.1"
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: e1741524eed25b842f540d6b1dd69419a87abcd0093708ad9160d824fbf70b63dfa41650d2b8c9e8c09ad83e0f0568f6904f11b790b16be67a23fbf5d3fa9464
   languageName: node
   linkType: hard
 

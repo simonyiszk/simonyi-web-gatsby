@@ -6,7 +6,16 @@ import { HomeHeader } from '../components/header';
 import { ChevronIcon, SimonyiFullLightIcon } from '../components/icons';
 import { Profile } from '../components/profile';
 import { StudentGroup } from '../components/student-group';
-import ImageViewer from 'react-simple-image-viewer';
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
+import Captions from 'yet-another-react-lightbox/plugins/captions';
+import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen';
+import Slideshow from 'yet-another-react-lightbox/plugins/slideshow';
+import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails';
+import Video from 'yet-another-react-lightbox/plugins/video';
+import Zoom from 'yet-another-react-lightbox/plugins/zoom';
+import 'yet-another-react-lightbox/plugins/captions.css';
+import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import { about, groups, headlines, images, profiles } from '../utils';
 
 function Greeting() {
@@ -68,17 +77,14 @@ function Headlines() {
 }
 
 function ImageBrowser() {
-  const [currentImage, setCurrentImage] = React.useState(0);
-  const [isViewerOpen, setIsViewerOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
 
-  const openImageViewer = React.useCallback((index: number) => {
-    setCurrentImage(index);
-    setIsViewerOpen(true);
-  }, []);
+  const openLightbox = () => {
+    setIsOpen(true);
+  };
 
-  const closeImageViewer = () => {
-    setCurrentImage(0);
-    setIsViewerOpen(false);
+  const closeLightbox = () => {
+    setIsOpen(false);
   };
 
   return (
@@ -97,23 +103,27 @@ function ImageBrowser() {
           height="100px"
           bgColor="#000000"
           flexShrink="0"
-          onClick={() => openImageViewer(index)}
+          onClick={() => openLightbox()}
           _hover={{ cursor: 'pointer' }}
         >
           <Image src={image.url} alt={image.alt} width="100%" height="100%" />
         </Box>
       ))}
-
-      {isViewerOpen && (
-        <ImageViewer
-          backgroundStyle={{ backgroundColor: 'rgba(0,0,0,0.50)', backdropFilter: 'blur(10px)' }}
-          src={images.map((image) => image.url)}
-          currentIndex={currentImage}
-          disableScroll={false}
-          closeOnClickOutside={true}
-          onClose={closeImageViewer}
-        />
-      )}
+      <Lightbox
+        open={isOpen}
+        slides={images.map((image) => {
+          return {
+            src: image.url,
+            alt: image.alt,
+            title: image.title,
+            description: image.description,
+            width: image.width,
+            height: image.height
+          };
+        })}
+        close={() => closeLightbox()}
+        plugins={[Captions, Fullscreen, Slideshow, Thumbnails, Video, Zoom]}
+      />
     </Box>
   );
 }
