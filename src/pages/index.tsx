@@ -77,9 +77,11 @@ function Headlines() {
 }
 
 function ImageBrowser() {
+  const [index, setIndex] = React.useState(0);
   const [isOpen, setIsOpen] = React.useState(false);
 
-  const openLightbox = () => {
+  const openLightbox = (index = 0) => {
+    setIndex(index);
     setIsOpen(true);
   };
 
@@ -103,7 +105,7 @@ function ImageBrowser() {
           height="100px"
           bgColor="#000000"
           flexShrink="0"
-          onClick={() => openLightbox()}
+          onClick={() => openLightbox(index)}
           _hover={{ cursor: 'pointer' }}
         >
           <Image src={image.url} alt={image.alt} width="100%" height="100%" />
@@ -121,6 +123,7 @@ function ImageBrowser() {
             height: image.height
           };
         })}
+        index={index}
         close={() => closeLightbox()}
         plugins={[Captions, Fullscreen, Slideshow, Thumbnails, Video, Zoom]}
       />
