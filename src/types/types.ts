@@ -28,11 +28,11 @@ type ProfileType = {
   socials: SocialType[];
 };
 
-type GroupType = {
+type StudentGroupType = {
   name: string;
   logo: ImageType;
   description: string;
   socials: SocialType[];
 };
 
-export { AboutType, ImageType, ProfileType, GroupType, SocialIconType, SocialType };
+export { AboutType, ImageType, ProfileType, StudentGroupType, SocialIconType, SocialType };

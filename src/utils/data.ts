@@ -1,4 +1,4 @@
-import type { ProfileType, GroupType, AboutType, ImageType } from '../types';
+import type { ProfileType, StudentGroupType, AboutType, ImageType } from '../types';
 
 const about: AboutType = {
   title: 'A szakkoli',
@@ -135,7 +135,7 @@ const profiles: Array<ProfileType> = [
   }
 ];
 
-const groups: Array<GroupType> = [
+const groups: Array<StudentGroupType> = [
   {
     name: 'AC Studio & Live',
     logo: {

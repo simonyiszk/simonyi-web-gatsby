@@ -142,7 +142,7 @@ function About() {
   );
 }
 
-function Studies() {
+function StudentGroups() {
   return (
     <Box display="flex" flexDirection="column" gap="32px" pb="calc(80px + 2rem)">
       <Box alignSelf={{ base: 'center', md: 'flex-start' }}>
@@ -193,7 +193,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Box maxWidth="1496px" mx="auto" p={8}>
         <Headlines />
         <About />
-        <Studies />
+        <StudentGroups />
         <Presidency />
       </Box>
     </HomeLayout>
