@@ -61,7 +61,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.8.3"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:18.2.0"],\
-            ["react-simple-image-viewer", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:1.2.2"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
           ],\
           "linkType": "SOFT"\
@@ -20567,32 +20566,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["react-simple-image-viewer", [\
-        ["npm:1.2.2", {\
-          "packageLocation": "./.yarn/cache/react-simple-image-viewer-npm-1.2.2-9a70c9f352-2e5e41d0f7.zip/node_modules/react-simple-image-viewer/",\
-          "packageDependencies": [\
-            ["react-simple-image-viewer", "npm:1.2.2"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:1.2.2", {\
-          "packageLocation": "./.yarn/__virtual__/react-simple-image-viewer-virtual-dea8045a60/0/cache/react-simple-image-viewer-npm-1.2.2-9a70c9f352-2e5e41d0f7.zip/node_modules/react-simple-image-viewer/",\
-          "packageDependencies": [\
-            ["react-simple-image-viewer", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:1.2.2"],\
-            ["@types/react", "npm:18.0.27"],\
-            ["@types/react-dom", "npm:18.0.10"],\
-            ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:18.2.0"]\
-          ],\
-          "packagePeers": [\
-            "@types/react-dom",\
-            "@types/react",\
-            "react-dom",\
-            "react"\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["react-style-singleton", [\
         ["npm:2.2.1", {\
           "packageLocation": "./.yarn/cache/react-style-singleton-npm-2.2.1-e45b97b153-7ee8ef3aab.zip/node_modules/react-style-singleton/",\
@@ -21548,7 +21521,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.8.3"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:18.2.0"],\
-            ["react-simple-image-viewer", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:1.2.2"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
           ],\
           "linkType": "SOFT"\

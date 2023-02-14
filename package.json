@@ -36,8 +36,7 @@
     "gatsby-source-filesystem": "5.5.0",
     "gatsby-transformer-sharp": "5.5.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-simple-image-viewer": "1.2.2"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@chakra-ui/cli": "2.3.0",
