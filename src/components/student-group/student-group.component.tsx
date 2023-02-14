@@ -1,9 +1,9 @@
 import React from 'react';
 import { Box, Link, Text, Image, useBreakpointValue } from '@chakra-ui/react';
 import { ChevronIcon, SocialIcon } from '../icons';
-import type { GroupType } from '../../types';
+import type { StudentGroupType } from '../../types';
 
-function StudentGroup({ name, logo, description, socials = [] }: GroupType) {
+function StudentGroup({ name, logo, description, socials = [] }: StudentGroupType) {
   const [isOpen, setIsOpen] = React.useState(false);
   const isMobile = useBreakpointValue({ base: true, md: false }) as boolean;
 

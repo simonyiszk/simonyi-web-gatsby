@@ -142,7 +142,7 @@ function About() {
   );
 }
 
-function Studies() {
+function StudentGroups() {
   return (
     <Box display="flex" flexDirection="column" gap="32px" pb="calc(80px + 2rem)">
       <Box alignSelf={{ base: 'center', md: 'flex-start' }}>
@@ -165,11 +165,11 @@ function Studies() {
   );
 }
 
-function Leadership() {
+function Presidency() {
   return (
     <Box display="flex" flexDirection="column" gap="2rem" pb="calc(80px + 2rem)">
       <Box alignSelf={{ base: 'center', md: 'flex-start' }}>
-        <Text as="h1">Vezetőség</Text>
+        <Text as="h1">Elnökség</Text>
       </Box>
       <Box alignSelf="center" display="flex" justifyContent="center" flexDirection="row" gap="2rem" flexWrap="wrap" width="100%">
         {profiles.map((profile, index) => (
@@ -193,8 +193,8 @@ const IndexPage: React.FC<PageProps> = () => {
       <Box maxWidth="1496px" mx="auto" p={8}>
         <Headlines />
         <About />
-        <Studies />
-        <Leadership />
+        <StudentGroups />
+        <Presidency />
       </Box>
     </HomeLayout>
   );
