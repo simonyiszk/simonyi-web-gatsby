@@ -139,7 +139,7 @@ const groups: Array<StudentGroupType> = [
   {
     name: 'AC Studio & Live',
     logo: {
-      url: '/AC.svg',
+      url: '/simonyi/ac.svg',
       alt: ''
     },
     description:
@@ -159,7 +159,7 @@ const groups: Array<StudentGroupType> = [
   {
     name: 'Budavári Schönherz Stúdió',
     logo: {
-      url: '/BSS.svg',
+      url: '/simonyi/bss.svg',
       alt: ''
     },
     description:
@@ -182,7 +182,7 @@ const groups: Array<StudentGroupType> = [
   {
     name: 'HA5KFU Rádióamatőr Klub',
     logo: {
-      url: '/HA5KFU.svg',
+      url: '/simonyi/ha5kfu.svg',
       alt: ''
     },
     description:
@@ -197,7 +197,7 @@ const groups: Array<StudentGroupType> = [
   {
     name: 'Kir-Dev',
     logo: {
-      url: '/Kir-Dev.svg',
+      url: '/simonyi/kir-dev.svg',
       alt: ''
     },
     description:
@@ -211,7 +211,7 @@ const groups: Array<StudentGroupType> = [
   {
     name: 'LEGO Kör',
     logo: {
-      url: '/LEGO.svg',
+      url: '/simonyi/lego.svg',
       alt: ''
     },
     description:
@@ -225,7 +225,7 @@ const groups: Array<StudentGroupType> = [
   {
     name: 'Menedzsment Kör',
     logo: {
-      url: '/MGMT.svg',
+      url: '/simonyi/mgmt.svg',
       alt: ''
     },
     description:
@@ -235,7 +235,7 @@ const groups: Array<StudentGroupType> = [
   {
     name: 'schdesign',
     logo: {
-      url: '/schdesign.svg',
+      url: '/simonyi/schdesign.svg',
       alt: ''
     },
     description:
@@ -256,7 +256,7 @@ const groups: Array<StudentGroupType> = [
   {
     name: 'Schönherz Elektronikai Műhely',
     logo: {
-      url: '/SEM.svg',
+      url: '/simonyi/sem.svg',
       alt: ''
     },
     description:
@@ -277,7 +277,7 @@ const groups: Array<StudentGroupType> = [
   {
     name: 'SPOT',
     logo: {
-      url: '/SPOT.svg',
+      url: '/simonyi/spot.svg',
       alt: ''
     },
     description:
