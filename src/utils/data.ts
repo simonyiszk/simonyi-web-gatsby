@@ -12,9 +12,9 @@ const headlines: Array<string> = [
 ];
 
 const images: Array<ImageType & { title: string; description: string; width: number; height: number }> = [
-  { url: '/home-bg/bg-buli.png', alt: 'bulis kep', title: 'Example title', description: 'Example description', width: 1920, height: 1080 },
+  { url: '/lightbox/bg-buli.png', alt: 'bulis kep', title: 'Example title', description: 'Example description', width: 1920, height: 1080 },
   {
-    url: '/home-bg/bg-default.png',
+    url: '/lightbox/bg-default.png',
     alt: 'default kep',
     title: 'Example title',
     description: 'Example description',
@@ -22,7 +22,7 @@ const images: Array<ImageType & { title: string; description: string; width: num
     height: 1080
   },
   {
-    url: '/home-bg/bg-poharak.png',
+    url: '/lightbox/bg-poharak.png',
     alt: 'poharak kep',
     title: 'Example title',
     description: 'Example description',
@@ -30,16 +30,16 @@ const images: Array<ImageType & { title: string; description: string; width: num
     height: 1080
   },
   {
-    url: '/home-bg/bg-poharak.png',
+    url: '/lightbox/bg-poharak.png',
     alt: 'poharak kep',
     title: 'Example title',
     description: 'Example description',
     width: 1920,
     height: 1080
   },
-  { url: '/home-bg/bg-buli.png', alt: 'bulis kep', title: 'Example title', description: 'Example description', width: 1920, height: 1080 },
+  { url: '/lightbox/bg-buli.png', alt: 'bulis kep', title: 'Example title', description: 'Example description', width: 1920, height: 1080 },
   {
-    url: '/home-bg/bg-default.png',
+    url: '/lightbox/bg-default.png',
     alt: 'default kep',
     title: 'Example title',
     description: 'Example description',
@@ -47,7 +47,7 @@ const images: Array<ImageType & { title: string; description: string; width: num
     height: 1080
   },
   {
-    url: '/home-bg/bg-default.png',
+    url: '/lightbox/bg-default.png',
     alt: 'default kep',
     title: 'Example title',
     description: 'Example description',
@@ -55,14 +55,14 @@ const images: Array<ImageType & { title: string; description: string; width: num
     height: 1080
   },
   {
-    url: '/home-bg/bg-poharak.png',
+    url: '/lightbox/bg-poharak.png',
     alt: 'poharak kep',
     title: 'Example title',
     description: 'Example description',
     width: 1920,
     height: 1080
   },
-  { url: '/home-bg/bg-buli.png', alt: 'bulis kep', title: 'Example title', description: 'Example description', width: 1920, height: 1080 }
+  { url: '/lightbox/bg-buli.png', alt: 'bulis kep', title: 'Example title', description: 'Example description', width: 1920, height: 1080 }
 ];
 
 const profiles: Array<ProfileType> = [
