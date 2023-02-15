@@ -68,7 +68,7 @@ function SEO({
     title: title ? format(titleTemplate || defaultTitleTemplate, title) : defaultTitle,
     description: description || defaultDescription,
     image: `${siteUrl || defaultSiteUrl}${image || defaultImage}`,
-    url: `${siteUrl}${pathname || ''}`
+    url: `${siteUrl || defaultSiteUrl}${pathname || ''}`
   };
 
   // https://developers.facebook.com/docs/sharing/webmasters/
