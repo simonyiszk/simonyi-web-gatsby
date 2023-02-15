@@ -18,6 +18,7 @@ import 'yet-another-react-lightbox/plugins/captions.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import { about, groups, headlines, images, profiles } from '../utils';
 import { SEO } from '../components/seo';
+import { StaticImage } from 'gatsby-plugin-image';
 
 function Greeting() {
   return (
@@ -35,7 +36,7 @@ function Greeting() {
         filter="blur(10px)"
         display="flex"
       >
-        <Image src="/home-bg/bg-default.png" height="100%" width="100%" objectFit="cover" />
+        <StaticImage src="../images/hero/bg-default.png" alt="Hero image" objectFit="cover" style={{ height: '100%', width: '100%' }} />
       </Box>
       <Box
         display="flex"
