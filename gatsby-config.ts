@@ -12,7 +12,7 @@ const config: GatsbyConfig = {
     description:
       'A Simonyi Károly Szakkollégium egy hallgatói szakmai szervezet, amely a BME Villamosmérnöki és Informatikai Karán működik.',
     siteUrl: `https://simonyi.bme.hu`,
-    image: '/image.png',
+    image: '/cover.png',
     ogType: 'website',
     ogImageType: 'image/png',
     ogImageWidth: '960',
