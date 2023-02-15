@@ -1,4 +1,4 @@
-import { BMEIcon, SchonherzIcon, SimonyiFullDarkIcon, SimonyiFullLightIcon, SimonyiLogoIcon, VIKIcon } from './bme';
+import { SimonyiFullDarkIcon, SimonyiFullLightIcon, SimonyiLogoIcon } from './bme';
 import { EmailIcon, FacebookIcon, GitHubIcon, GlobeIcon, InstagramIcon, LinkedInIcon, PhoneIcon, YouTubeIcon } from './social';
 import { ChevronIcon } from './chevron-icon.component';
 import { IncreaseIcon } from './increase-icon.component';
@@ -15,11 +15,8 @@ export {
   LinkedInIcon,
   PhoneIcon,
   YouTubeIcon,
-  BMEIcon,
-  SchonherzIcon,
   SimonyiFullDarkIcon,
   SimonyiFullLightIcon,
   SimonyiLogoIcon,
-  VIKIcon,
   SocialIcon
 };
