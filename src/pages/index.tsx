@@ -17,6 +17,7 @@ import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import 'yet-another-react-lightbox/plugins/captions.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import { about, groups, headlines, images, profiles } from '../utils';
+import { SEO } from '../components/seo';
 
 function Greeting() {
   return (
@@ -205,4 +206,4 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Simonyi Károly Szakkollégium</title>;
+export const Head: HeadFC = () => <SEO title="Főoldal" />;

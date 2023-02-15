@@ -9,7 +9,18 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: `Simonyi Károly Szakkollégium`,
     titleTemplate: `%s | Simonyi Károly Szakkollégium`,
-    siteUrl: `https://simonyi.bme.hu`
+    description:
+      'A Simonyi Károly Szakkollégium egy hallgatói szakmai szervezet, amely a BME Villamosmérnöki és Informatikai Karán működik.',
+    siteUrl: `https://simonyi.bme.hu`,
+    image: '/image.png',
+    ogType: 'website',
+    ogImageType: 'image/png',
+    ogImageWidth: '960',
+    ogImageHeight: '540',
+    twitterCard: 'summary_large_image',
+    twitterImageAlt: 'A picture showing the logo of Simonyi Károly Szakkollégium',
+    twitterSite: 'simonyiszakkoli',
+    twitterCreator: 'simonyiszakkoli'
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
