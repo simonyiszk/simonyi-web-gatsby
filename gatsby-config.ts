@@ -6,6 +6,9 @@ require('dotenv').config({
 });
 
 const config: GatsbyConfig = {
+  flags: {
+    DEV_SSR: true
+  },
   siteMetadata: {
     title: `Simonyi Károly Szakkollégium`,
     titleTemplate: `%s | Simonyi Károly Szakkollégium`,
