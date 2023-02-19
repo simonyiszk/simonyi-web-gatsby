@@ -68,7 +68,7 @@ const images: Array<ImageType & { title: string; description: string; width: num
 const profiles: Array<ProfileType> = [
   {
     profilePicture: {
-      url: '/1.png',
+      url: '/simonyi/elnokok/1.png',
       alt: 'Piller Trisztán'
     },
     name: 'Piller Trisztán',
@@ -88,7 +88,7 @@ const profiles: Array<ProfileType> = [
   },
   {
     profilePicture: {
-      url: '/2.png',
+      url: '/simonyi/elnokok/2.png',
       alt: 'Kis Ákos'
     },
     name: 'Kis Ákos',
@@ -99,7 +99,7 @@ const profiles: Array<ProfileType> = [
   },
   {
     profilePicture: {
-      url: '/3.png',
+      url: '/simonyi/elnokok/3.png',
       alt: 'Jászberényi Áron'
     },
     name: 'Jászberényi Áron',
@@ -121,7 +121,7 @@ const profiles: Array<ProfileType> = [
   },
   {
     profilePicture: {
-      url: '/4.png',
+      url: '/simonyi/elnokok/4.png',
       alt: 'Püspöki Péter'
     },
     name: 'Püspöki Péter',
