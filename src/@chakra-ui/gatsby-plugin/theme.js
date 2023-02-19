@@ -62,3 +62,5 @@ const theme = {
 };
 
 export default extendTheme(theme);
+// build warning fixed by adding this line:
+export const baseTheme = {};
