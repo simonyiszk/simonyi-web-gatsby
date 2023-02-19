@@ -23,6 +23,8 @@ function Profile({ name, title, profilePicture, socials }: ProfileType) {
           objectFit="contain"
           width="100%"
           height="100%"
+          lineHeight="200px"
+          textAlign="center"
           borderRadius="50%"
           borderStyle="solid"
           borderWidth={2}
