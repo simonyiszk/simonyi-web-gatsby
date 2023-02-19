@@ -33,7 +33,7 @@ function StudentGroup({ name, logo, description, socials = [] }: StudentGroupTyp
           alignItems="center"
           gap="2rem"
           justifyContent="space-between"
-          _hover={{ cursor: 'pointer' }}
+          _hover={{ cursor: { base: 'pointer', md: 'auto' } }}
           onClick={(e) => handleToggle(e)}
         >
           <Text as="h3">{name}</Text>
