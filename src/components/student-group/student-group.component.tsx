@@ -5,7 +5,7 @@ import type { StudentGroupType } from '../../types';
 
 function StudentGroup({ name, logo, description, socials = [] }: StudentGroupType) {
   const [isOpen, setIsOpen] = React.useState(false);
-  const isMobile = useBreakpointValue({ base: true, md: false }, { ssr: false }) as boolean;
+  const isMobile = useBreakpointValue({ base: true, md: false }) as boolean;
 
   const handleToggle = (e: React.MouseEvent) => {
     e.preventDefault();
