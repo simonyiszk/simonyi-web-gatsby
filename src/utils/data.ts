@@ -143,7 +143,7 @@ const groups: Array<StudentGroupType> = [
       alt: ''
     },
     description:
-      'Az AC Studio & Live felel a kollégiumban tartott kisebb-nagyobb rendezvények hangosításáért és fénytechnikájáért, továbbá kezelik, üzemeltetik és karbantartják a kollégium rendezvénytechnikai eszközparkját. A kör gazdagon felszerelt hangstúdiója alkalmas kisebb zenekarok, együttesek többsávos felvételeinek elkészítésére is, amit rajtuk kívül kollégiumibandák és a Qpa csapatai is igénybe szoktak venni.',
+      'Az AC Studio & Live felel a kollégiumban tartott kisebb-nagyobb rendezvények hangosításáért és fénytechnikájáért, továbbá kezelik, üzemeltetik és karbantartják a kollégium rendezvénytechnikai eszközparkját. A kör gazdagon felszerelt hangstúdiója alkalmas zenekarok, együttesek többsávos felvételeinek elkészítésére is, amit rajtuk kívül kollégiumi bandák és a Qpa csapatai is igénybe szoktak venni.',
     socials: [
       {
         icon: 'website',
@@ -163,7 +163,7 @@ const groups: Array<StudentGroupType> = [
       alt: ''
     },
     description:
-      'A Budavári Schönherz Stúdiót legtöbben a hetente jelentkező élő online televízióadásairól és a rendezvények közvetítéséről, megörökítéséről ismerik. Ott voltak a Gólyatáborban, a Gólyahéten, a QPA-n, profi eszközeikkel pedig az év további részében is olyan tartalmat közvetítenek, amiért megéri online maradni csütörtök esténként: program- és filmajánlók, rendezvénybeszámolók, interjúk és élő felvételek zenekarokkal, tanárokkal vagy diákokkal és sok minden más. Az ezzel járó szerkesztési és technikai feladatokat is a kör tagjai végzik.',
+      'A Budavári Schönherz Stúdiót legtöbben a csütörtök esti élő adásairól és az egyetemi rendezvények közvetítéséről, videókról ismerik. Ott voltak a Gólyatáborban, a Gólyahéten, a QPA-n, de az év többi részében is megéri követni őket. Készítenek program- és filmajánlókat, interjúkat, és megörökítik az egyetemi bulikat. Az ezzel járó szerkesztési és technikai feladatokat is a kör tagjai végzik.',
     socials: [
       { icon: 'website', link: { url: 'https://bsstudio.hu/', title: 'bsstudio.hu', text: 'https://bsstudio.hu/' } },
       { icon: 'email', link: { url: 'mailto:bssinfo@sch.bme.hu', title: 'bssinfo@sch.bme.hu', text: 'bssinfo@sch.bme.hu' } },
@@ -201,7 +201,7 @@ const groups: Array<StudentGroupType> = [
       alt: ''
     },
     description:
-      'A Kir-Dev, vagyis a Kollégiumi Információs Rendszer Fejlesztők és Üzemeltetők 2001-ben alakult, és webfejlesztéssel, webes alkalmazások üzemeltetésével, oktatásával foglalkozik. Ők fejlesztik folyamatosan a PéK (Profil és Körök) alkalmazást, amely ma már több mint 30000 felhasználóval rendelkezik. Emellett a Qpa, G7 és SCHPincér weboldalakat is a kör tagjai készítették. A leggyakrabban használt technológiáik közé tartoznak a nyílt forráskódú Ruby on Rails, Node.js, React és Spring Boot keretrendszerek. A kör által készített összes alkalmazás nyílt forráskódú, megtekinthető GitHubon.',
+      'A Kollégiumi Információs Rendszer Fejlesztők és Üzemeltetők (Kir-Dev) 2001-ben alakult, webalkalmazások fejlesztése és üzemeltetése a profiljuk. Ők fejlesztik a Profil és Körök (PéK) oldalt, melynek mára 30 ezernél is több felhasználója van. Emellett a Qpa, G7 és SCH-Pincér weboldalakat is a kör tagjai készítik. Főként Ruby on Rails, Node.js, React és Spring Boot keretrendszerekkel dolgoznak.',
     socials: [
       { icon: 'website', link: { url: 'https://kir-dev.hu/', title: 'kir-dev.hu', text: 'https://kir-dev.hu/' } },
       { icon: 'email', link: { url: 'mailto:kir-dev@sch.bme.hu', title: 'kir-dev@sch.bme.hu', text: 'kir-dev@sch.bme.hu' } },
@@ -215,7 +215,7 @@ const groups: Array<StudentGroupType> = [
       alt: ''
     },
     description:
-      'A LEGO Kör nevét a LEGO Mindstorms-ról kapta, ugyanis hosszú ideig ezen eszközök fejlesztése volt a fő profiljuk. Mára nem csak ezzel foglalkoznak, nyitottak a mesterséges intelligencia, az ipari irányítástechnika, az űrtechnológia és az alternatív irányításmódok felé is. Eszközparkjuk lehetőséget nyújt az innovatív ötletek megvalósításához. Náluk bárki megtalálhatja a számára megfelelő szakterületet.',
+      'A LEGO Kör nevét a LEGO Mindstorms-ról kapta, ugyanis hosszú ideig ezen eszközök fejlesztése volt a fő profiljuk. Mára nemcsak ezzel foglalkoznak, nyitottak a mesterséges intelligencia, az ipari irányítástechnika, az űrtechnológia és az alternatív irányításmódok felé is. Eszközparkjuk lehetőséget nyújt innovatív ötletek megvalósításához. Náluk bárki megtalálhatja a számára megfelelő szakterületet.',
     socials: [
       { icon: 'website', link: { url: 'https://legokor.hu/', title: 'legokor.hu', text: 'https://legokor.hu/' } },
       { icon: 'email', link: { url: 'mailto:lego@sch.bme.hu', title: 'lego@sch.bme.hu', text: 'lego@sch.bme.hu' } },
@@ -229,7 +229,7 @@ const groups: Array<StudentGroupType> = [
       alt: ''
     },
     description:
-      'A MGMT a szakkolis rendezvények megszervezésével, a szakkoli társadalmi felelősségvállalásával foglalkozik. A tagok marketing-, PR-, HR és gazdaságis tapasztalatokra is szert tehetnek nálunk. Főbb rendezvényeink a Félévnyitó & Felvételi Vacsorák, a Szakmai Hét, a Simonyi Nyári Tábor, illetve a Simonyi Szülinap, ahová az ország szakkollégiumaiból érkeznek vendégek. A körben kapott menedzsment készségekkel és tapasztalatokkal felruházott szakkollégista az itt megszerzett tudást nemcsak az egyetemi pályafutása során, hanem annak befejezése után is számos területen tudja kamatoztatni.',
+      'A MGMT rendezvényeink és társadalmi felelősségvállalásunk koordinálásával foglalkozik. A tagok marketing, HR és gazdasági tapasztalatokra is szert tehetnek nálunk. Rendezvényeink a félévkezdő és -záró vacsorák, a Szakmai Hét, a Simonyi Nyári Tábor, illetve a Simonyi Szülinap. Tagjaink a szerzett tudást nemcsak egyetemi pályafutásuk során, hanem azután is számos területen tudják kamatoztatni.',
     socials: [{ icon: 'email', link: { url: 'mailto:mgmt@simonyi.bme.hu', title: 'mgmt@simonyi.bme.hu', text: 'mgmt@simonyi.bme.hu' } }]
   },
   {
@@ -239,7 +239,7 @@ const groups: Array<StudentGroupType> = [
       alt: ''
     },
     description:
-      'A Simonyi Károly Szakkollégium kreatív alkotóműhelyeként a kör feladata a különböző digitális műfajok ápolása, mint például az arculattervezés, a logótervezés, a webdesign, a UX design, a 3D modellezés vagy a nyomtatott grafikák készítése. Mindezt valós projekteken teszik – egyik legnagyobb munkájuk az évről évre megrendezésre kerülő Simonyi Konferencia és a Schönherz QPA arculatának megtervezése.',
+      'A szakkollégium kreatív alkotóműhelyeként az schdesign kör feladata a különböző digitális műfajok ápolása, mint például az arculattervezés, a logótervezés, a webdesign, a UX design, a 3D modellezés vagy a nyomtatott grafikák készítése. Mindezt valós projekteken teszik – egyik legnagyobb munkájuk az évről évre megrendezésre kerülő Simonyi Konferencia és a Schönherz QPA arculatának megtervezése.',
     socials: [
       { icon: 'website', link: { url: 'https://schdesign.hu/', title: 'schdesign.hu', text: 'https://schdesign.hu/' } },
       { icon: 'email', link: { url: 'mailto:hello@schdesign.hu', title: 'hello@schdesign.hu', text: 'hello@schdesign.hu' } },
@@ -281,7 +281,7 @@ const groups: Array<StudentGroupType> = [
       alt: ''
     },
     description:
-      'A kör tagjai minden villanykari eseményen részt vesznek, és fényképek formájában dokumentálják azokat. Emellett sokat fotóznak a Schönherz Kollégium 1419-es klubszobájában található műtermükben is, számos villanykaros önéletrajzában szerepelnek itt készült fotók. Archívumukban hosszú évekre visszamenőleg megtekinthető a villanykari közösség élete, csapatuk pedig folyamatosan fejlődik létszámban, és a belsős képzéseiknek köszönhetően szaktudásban is.',
+      'A SPOT tagjai minden villanykari eseményen részt vesznek, és fényképek formájában dokumentálják azokat. Emellett sokat fotóznak a műtermükben is, számos villanykaros önéletrajzában szerepelnek itt készült fotók. Archívumukban hosszú évekre visszamenőleg megtekinthető a villanykari közösség élete, csapatuk pedig folyamatosan fejlődik létszámban, és a belsős képzéseiknek hála szaktudásban is.',
     socials: [
       { icon: 'website', link: { url: 'https://spot.sch.bme.hu/', title: 'spot.sch.bme.hu', text: 'https://spot.sch.bme.hu/' } },
       { icon: 'email', link: { url: 'mailto:spot@simonyi.bme.hu', title: 'spot@simonyi.bme.hu', text: 'spot@simonyi.bme.hu' } },
