@@ -2,11 +2,10 @@ import React from 'react';
 import { Box, Link, Text, Image, useBreakpointValue } from '@chakra-ui/react';
 import { ChevronIcon, SocialIcon } from '../icons';
 import type { StudentGroupType } from '../../types';
-import { isBrowser } from '../../utils';
 
 function StudentGroup({ name, logo, description, socials = [] }: StudentGroupType) {
   const [isOpen, setIsOpen] = React.useState(false);
-  const isMobile = isBrowser() ? (useBreakpointValue({ base: true, md: false }, { ssr: false }) as boolean) : false;
+  const isMobile = useBreakpointValue({ base: true, md: false }) as boolean;
 
   const handleToggle = (e: React.MouseEvent) => {
     e.preventDefault();
