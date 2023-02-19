@@ -68,7 +68,7 @@ const images: Array<ImageType & { title: string; description: string; width: num
 const profiles: Array<ProfileType> = [
   {
     profilePicture: {
-      url: '/default.png',
+      url: '/1.png',
       alt: 'Piller Trisztán'
     },
     name: 'Piller Trisztán',
@@ -88,7 +88,7 @@ const profiles: Array<ProfileType> = [
   },
   {
     profilePicture: {
-      url: '/default.png',
+      url: '/2.png',
       alt: 'Kis Ákos'
     },
     name: 'Kis Ákos',
@@ -99,7 +99,7 @@ const profiles: Array<ProfileType> = [
   },
   {
     profilePicture: {
-      url: '/default.png',
+      url: '/3.png',
       alt: 'Jászberényi Áron'
     },
     name: 'Jászberényi Áron',
@@ -121,7 +121,7 @@ const profiles: Array<ProfileType> = [
   },
   {
     profilePicture: {
-      url: '/default.png',
+      url: '/4.png',
       alt: 'Püspöki Péter'
     },
     name: 'Püspöki Péter',
@@ -205,7 +205,9 @@ const groups: Array<StudentGroupType> = [
     socials: [
       { icon: 'website', link: { url: 'https://kir-dev.hu/', title: 'kir-dev.hu', text: 'https://kir-dev.hu/' } },
       { icon: 'email', link: { url: 'mailto:kir-dev@sch.bme.hu', title: 'kir-dev@sch.bme.hu', text: 'kir-dev@sch.bme.hu' } },
-      { icon: 'facebook', link: { url: 'https://facebook.com/kirdevteam/', title: 'facebook.com/kirdevteam', text: '/kirdevteam' } }
+      { icon: 'facebook', link: { url: 'https://facebook.com/kirdevteam/', title: 'facebook.com/kirdevteam', text: '/kirdevteam' } },
+      { icon: 'instagram', link: { url: 'https://www.youtube.com/@kir-dev', title: 'youtube.com/@kir-dev', text: '@kir-dev' } },
+      { icon: 'youtube', link: { url: 'https://www.instagram.com/kir.dev/', title: 'instagram.com/kir.dev', text: '@kir.dev' } }
     ]
   },
   {
