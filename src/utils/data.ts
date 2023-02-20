@@ -152,7 +152,7 @@ const groups: Array<StudentGroupType> = [
       { icon: 'email', link: { url: 'mailto:ac-info@simonyi.bme.hu', title: 'ac-info@simonyi.bme.hu', text: 'ac-info@simonyi.bme.hu' } },
       {
         icon: 'facebook',
-        link: { url: 'https://www.facebook.com/acstudiolive/', title: 'www.facebook.com/acstudiolive', text: '/acstudiolive' }
+        link: { url: 'https://www.facebook.com/acstudiolive/', title: 'facebook.com/acstudiolive', text: '/acstudiolive' }
       }
     ]
   },
@@ -167,12 +167,12 @@ const groups: Array<StudentGroupType> = [
     socials: [
       { icon: 'website', link: { url: 'https://bsstudio.hu/', title: 'bsstudio.hu', text: 'https://bsstudio.hu/' } },
       { icon: 'email', link: { url: 'mailto:bssinfo@sch.bme.hu', title: 'bssinfo@sch.bme.hu', text: 'bssinfo@sch.bme.hu' } },
-      { icon: 'facebook', link: { url: 'https://www.facebook.com/bsstudio/', title: 'www.facebook.com/bsstudio', text: '/bsstudio' } },
+      { icon: 'facebook', link: { url: 'https://www.facebook.com/bsstudio/', title: 'facebook.com/bsstudio', text: '/bsstudio' } },
       {
         icon: 'instagram',
         link: {
           url: 'https://www.instagram.com/budavari_schonherz_studio/',
-          title: 'www.instagram.com/budavari_schonherz_studio',
+          title: 'instagram.com/budavari_schonherz_studio',
           text: '@budavari_schonherz_studio'
         }
       },
@@ -190,8 +190,8 @@ const groups: Array<StudentGroupType> = [
     socials: [
       { icon: 'website', link: { url: 'https://ha5kfu.hu/', title: 'ha5kfu.hu', text: 'https://ha5kfu.hu/' } },
       { icon: 'email', link: { url: 'mailto:ha5kfu@simonyi.bme.hu', title: 'ha5kfu@simonyi.bme.hu', text: 'ha5kfu@simonyi.bme.hu' } },
-      { icon: 'facebook', link: { url: 'https://www.facebook.com/ha5kfu/', title: 'www.facebook.com/ha5kfu', text: '/ha5kfu' } },
-      { icon: 'instagram', link: { url: 'https://www.instagram.com/ha5kfu/', title: 'www.instagram.com/ha5kfu', text: '@ha5kfu' } }
+      { icon: 'facebook', link: { url: 'https://www.facebook.com/ha5kfu/', title: 'facebook.com/ha5kfu', text: '/ha5kfu' } },
+      { icon: 'instagram', link: { url: 'https://www.instagram.com/ha5kfu/', title: 'instagram.com/ha5kfu', text: '@ha5kfu' } }
     ]
   },
   {
@@ -247,11 +247,11 @@ const groups: Array<StudentGroupType> = [
       { icon: 'email', link: { url: 'mailto:hello@schdesign.hu', title: 'hello@schdesign.hu', text: 'hello@schdesign.hu' } },
       {
         icon: 'facebook',
-        link: { url: 'https://www.facebook.com/schdesignbme/', title: 'www.facebook.com/schdesignbme', text: '/schdesignbme' }
+        link: { url: 'https://www.facebook.com/schdesignbme/', title: 'facebook.com/schdesignbme', text: '/schdesignbme' }
       },
       {
         icon: 'instagram',
-        link: { url: 'https://www.instagram.com/schdesign.hu/', title: 'www.instagram.com/schdesign.hu', text: '@schdesign.hu' }
+        link: { url: 'https://www.instagram.com/schdesign.hu/', title: 'instagram.com/schdesign.hu', text: '@schdesign.hu' }
       }
     ]
   },
@@ -287,8 +287,8 @@ const groups: Array<StudentGroupType> = [
     socials: [
       { icon: 'website', link: { url: 'https://spot.sch.bme.hu/', title: 'spot.sch.bme.hu', text: 'https://spot.sch.bme.hu/' } },
       { icon: 'email', link: { url: 'mailto:spot@simonyi.bme.hu', title: 'spot@simonyi.bme.hu', text: 'spot@simonyi.bme.hu' } },
-      { icon: 'facebook', link: { url: 'https://www.facebook.com/bmespot/', title: 'www.facebook.com/bmespot', text: '/bmespot' } },
-      { icon: 'instagram', link: { url: 'https://www.instagram.com/bmespot/', title: 'www.instagram.com/bmespot', text: '@bmespot' } }
+      { icon: 'facebook', link: { url: 'https://www.facebook.com/bmespot/', title: 'facebook.com/bmespot', text: '/bmespot' } },
+      { icon: 'instagram', link: { url: 'https://www.instagram.com/bmespot/', title: 'instagram.com/bmespot', text: '@bmespot' } }
     ]
   }
 ];
