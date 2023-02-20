@@ -76,10 +76,13 @@ function HomeFooter() {
         <Link href="http://www.vik.bme.hu/" target="_blank">
           <StaticImage src="../../images/bme/vik.png" alt="Logo of BME" height={60} />
         </Link>
-        <Link href="https://svie.hu/" target="_blank" width="225px">
+        <Link href="https://svie.hu/" target="_blank" width={{ base: 'auto', md: '225px' }}>
           <StaticImage src="../../images/bme/schonherz.png" alt="Logo of BME" height={60} />
         </Link>
       </Box>
+      <Link href="https://github.com/simonyiszk/simonyi-web-gatsby">
+        <Text align="center">github.com/simonyiszk/simonyi-web-gatsby</Text>
+      </Link>
     </Box>
   );
 }

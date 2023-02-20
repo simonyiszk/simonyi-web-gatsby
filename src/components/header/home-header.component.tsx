@@ -11,7 +11,7 @@ function HomeHeader() {
       <Link href="http://www.vik.bme.hu/" target="_blank">
         <StaticImage src="../../images/bme/vik.png" alt="Logo of BME" height={50} />
       </Link>
-      <Link href="https://svie.hu/" target="_blank" width="188px">
+      <Link href="https://svie.hu/" target="_blank" width={{ base: 'auto', md: '188px' }}>
         <StaticImage src="../../images/bme/schonherz.png" alt="Logo of BME" height={50} />
       </Link>
     </Box>
