@@ -12,7 +12,7 @@ const config: GatsbyConfig = {
   siteMetadata: {
     themeColor: '#63BC47',
     title: `Simonyi Károly Szakkollégium`,
-    titleTemplate: `%s | Simonyi Károly Szakkollégium`,
+    titleTemplate: `%s - Simonyi Károly Szakkollégium`,
     description:
       'A Simonyi Károly Szakkollégium egy hallgatói szakmai szervezet, amely a BME Villamosmérnöki és Informatikai Karán működik.',
     siteUrl: `https://simonyi.bme.hu`,
