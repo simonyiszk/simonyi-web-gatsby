@@ -207,4 +207,4 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <SEO title="Főoldal" />;
+export const Head: HeadFC = () => <SEO title="Főoldal" themeColor="#231F20" />;
