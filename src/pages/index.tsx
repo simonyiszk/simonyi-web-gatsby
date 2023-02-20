@@ -16,7 +16,7 @@ import Video from 'yet-another-react-lightbox/plugins/video';
 import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import 'yet-another-react-lightbox/plugins/captions.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
-import { about, groups, headlines, images, profiles } from '../utils';
+import { about, groups, images, profiles } from '../utils';
 import { SEO } from '../components/seo';
 import { StaticImage } from 'gatsby-plugin-image';
 
@@ -54,25 +54,6 @@ function Greeting() {
           <ChevronIcon fill="light" />
         </Box>
       </Box>
-    </Box>
-  );
-}
-
-function Headlines() {
-  return (
-    <Box
-      display="flex"
-      flexDirection={{ base: 'column', md: 'row' }}
-      gap="70px"
-      justifyContent="center"
-      alignItems="center"
-      flexWrap="wrap"
-    >
-      {headlines.map((headline, index) => (
-        <Box key={index} width="250px">
-          <Text as="h1" textAlign="center" dangerouslySetInnerHTML={{ __html: headline }} />
-        </Box>
-      ))}
     </Box>
   );
 }
@@ -196,7 +177,6 @@ const IndexPage: React.FC<PageProps> = () => {
       <Greeting />
       <Box maxWidth="1496px" mx="auto" p={8} display="flex" flexDirection="column" gap="calc(80px + 2rem)" pb="calc(80px + 2rem)">
         <Box />
-        <Headlines />
         <About />
         <StudentGroups />
         <Presidency />
