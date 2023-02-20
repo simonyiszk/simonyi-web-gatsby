@@ -67,7 +67,6 @@ function Headlines() {
       justifyContent="center"
       alignItems="center"
       flexWrap="wrap"
-      pb="calc(80px + 2rem)"
     >
       {headlines.map((headline, index) => (
         <Box key={index} width="250px">
@@ -135,7 +134,7 @@ function ImageBrowser() {
 
 function About() {
   return (
-    <Box display="flex" flexDirection="column" pb="calc(80px + 2rem)">
+    <Box display="flex" flexDirection="column">
       <Text as="h1" mb="32px">
         {about.title}
       </Text>
@@ -149,7 +148,7 @@ function About() {
 
 function StudentGroups() {
   return (
-    <Box display="flex" flexDirection="column" gap="32px" pb="calc(80px + 2rem)">
+    <Box display="flex" flexDirection="column" gap="32px">
       <Box alignSelf={{ base: 'center', md: 'flex-start' }}>
         <Text as="h1">Köreink</Text>
       </Box>
@@ -172,7 +171,7 @@ function StudentGroups() {
 
 function Presidency() {
   return (
-    <Box display="flex" flexDirection="column" gap="2rem" pb="calc(80px + 2rem)">
+    <Box display="flex" flexDirection="column" gap="2rem">
       <Box alignSelf={{ base: 'center', md: 'flex-start' }}>
         <Text as="h1">Elnökség</Text>
       </Box>
@@ -195,7 +194,8 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <HomeLayout>
       <Greeting />
-      <Box maxWidth="1496px" mx="auto" p={8}>
+      <Box maxWidth="1496px" mx="auto" p={8} display="flex" flexDirection="column" gap="calc(80px + 2rem)" pb="calc(80px + 2rem)">
+        <Box />
         <Headlines />
         <About />
         <StudentGroups />
