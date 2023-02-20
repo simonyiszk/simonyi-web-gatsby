@@ -16,7 +16,7 @@ function HomeFooter() {
         gap={16}
         justifyContent="space-evenly"
       >
-        <Box display="flex" flexDirection="column">
+        <Box display="flex" flexDirection="column" gap={1}>
           <Text as="h2" pb={4}>
             Elérhetőség
           </Text>
@@ -29,7 +29,7 @@ function HomeFooter() {
             Irinyi József utca 42, 1320
           </Text>
         </Box>
-        <Box display="flex" flexDirection="column">
+        <Box display="flex" flexDirection="column" gap={1}>
           <Text as="h2" pb={4}>
             Weboldalaink
           </Text>
@@ -48,7 +48,7 @@ function HomeFooter() {
             NTP-SZKOLL-21-0078
           </Link>
         </Box>
-        <Box display="flex" flexDirection="column">
+        <Box display="flex" flexDirection="column" gap={1}>
           <Text as="h2" pb={4}>
             Közösségi hálónk
           </Text>
