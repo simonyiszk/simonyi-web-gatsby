@@ -10,6 +10,7 @@ const config: GatsbyConfig = {
     DEV_SSR: true
   },
   siteMetadata: {
+    themeColor: '#63BC47',
     title: `Simonyi Károly Szakkollégium`,
     titleTemplate: `%s | Simonyi Károly Szakkollégium`,
     description:
