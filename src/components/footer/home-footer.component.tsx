@@ -24,7 +24,7 @@ function HomeFooter() {
             info@simonyi.bme.hu
           </Link>
           <Text mt={4}>
-            1117 Budapest
+            1117 Budapest,
             <br />
             Irinyi József utca 42, 1320
           </Text>
