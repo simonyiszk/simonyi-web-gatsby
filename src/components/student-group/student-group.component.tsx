@@ -23,7 +23,7 @@ function StudentGroup({ name, logo, description, socials = [] }: StudentGroupTyp
       justifyContent="space-between"
       padding="1.25rem"
       bg="darkmode_regular"
-      maxWidth={{ base: '100%', md: '330px' }}
+      maxWidth={{ base: '100%', md: '45%', lg: '31%' }}
     >
       <Box width="100%" display="flex" flexDirection="column" alignItems="center" gap="2rem">
         <Box
@@ -36,7 +36,9 @@ function StudentGroup({ name, logo, description, socials = [] }: StudentGroupTyp
           _hover={{ cursor: { base: 'pointer', md: 'auto' } }}
           onClick={(e) => handleToggle(e)}
         >
-          <Text as="h3">{name}</Text>
+          <Text as="h3" width="full" textAlign={{ base: 'left', md: 'center' }}>
+            {name}
+          </Text>
           {isMobile && (
             <Box p="0.5rem" transform={isOpen ? 'scaleY(-1)' : 'scaleY(1)'}>
               <ChevronIcon fill={isOpen ? 'simonyi_sarga' : 'simonyi_zold'} />
@@ -46,7 +48,7 @@ function StudentGroup({ name, logo, description, socials = [] }: StudentGroupTyp
         {(!isMobile || isOpen) && (
           <>
             <Box height="100px">
-              <Image src={logo.url} alt={logo.alt} height="100%" />
+              <Image src={logo.url} alt={logo.alt} height="100%" maxWidth="250px" />
             </Box>
             <Box>
               <Text>{description}</Text>

@@ -10,7 +10,7 @@ function HomeFooter() {
         maxWidth="1496px"
         display="flex"
         flexWrap="wrap"
-        flexDirection={{ base: 'column', md: 'row' }}
+        flexDirection={{ base: 'column', msm: 'row' }}
         alignItems={{ base: 'flex-start', md: 'flex-start' }}
         pb={8}
         gap={16}
