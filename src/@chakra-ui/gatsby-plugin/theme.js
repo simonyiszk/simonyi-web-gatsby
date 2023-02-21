@@ -6,6 +6,15 @@ const config = {
   initialColorMode: 'dark'
 };
 
+const breakpoints = {
+  sm: '30em',
+  msm: '40em',
+  md: '51em',
+  lg: '70em',
+  xl: '80em',
+  '2xl': '96em'
+};
+
 const theme = {
   fonts: {
     // https://www.figma.com/file/JOHGaqs67K52ZSj32xF8Bd/Weboldal?node-id=12%3A1076
@@ -58,6 +67,7 @@ const theme = {
       }
     })
   },
+  breakpoints,
   config
 };
 
