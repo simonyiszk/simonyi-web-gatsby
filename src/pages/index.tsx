@@ -61,12 +61,22 @@ function Greeting() {
           </Box>
           <Box display="flex" gap={8} flexWrap="wrap" flexDirection="row" justifyContent="space-evenly">
             <Link href="https://tanfolyam.simonyi.bme.hu/" title="tanfolyam.simonyi.bme.hu" target="_blank">
-              <Button bgColor="simonyi_zold" width={32}>
+              <Button
+                borderWidth={2}
+                _hover={{ borderColor: 'simonyi_zold', bgColor: 'var(--chakra-colors-whiteAlpha-300)' }}
+                bgColor="simonyi_zold"
+                width={32}
+              >
                 Bérlés
               </Button>
             </Link>
             <Link href="https://termek.sch.bme.hu/" title="termek.sch.bme.hu" target="_blank">
-              <Button bgColor="simonyi_zold" width={32}>
+              <Button
+                borderWidth={2}
+                _hover={{ borderColor: 'simonyi_zold', bgColor: 'var(--chakra-colors-whiteAlpha-300)' }}
+                bgColor="simonyi_zold"
+                width={32}
+              >
                 Tanfolyam
               </Button>
             </Link>
