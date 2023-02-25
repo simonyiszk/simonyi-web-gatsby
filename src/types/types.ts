@@ -1,3 +1,5 @@
+import { IGatsbyImageData } from 'gatsby-plugin-image';
+
 type SocialIconType = 'email' | 'facebook' | 'github' | 'instagram' | 'linkedin' | 'phone' | 'youtube' | 'website';
 
 type AboutType = {
@@ -8,6 +10,7 @@ type AboutType = {
 type ImageType = {
   url: string;
   alt: string;
+  gatsbyImageData?: IGatsbyImageData;
 };
 
 type LinkType = {

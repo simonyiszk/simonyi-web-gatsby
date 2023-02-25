@@ -55,7 +55,7 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/simonyi-logo.svg'
+        icon: 'static/favicon.svg'
       }
     },
 
@@ -71,14 +71,12 @@ const config: GatsbyConfig = {
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: './src/images/'
-      },
-      __key: 'images'
+        path: `${__dirname}/src/images/`
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',

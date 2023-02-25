@@ -6,9 +6,16 @@ const about: AboutType = {
 };
 
 const images: Array<ImageType & { title: string; description: string; width: number; height: number }> = [
-  { url: '/lightbox/bg-buli.png', alt: 'bulis kep', title: 'Example title', description: 'Example description', width: 1920, height: 1080 },
   {
-    url: '/lightbox/bg-default.png',
+    url: 'images/lightbox/1.png',
+    alt: 'bulis kep',
+    title: 'Example title',
+    description: 'Example description',
+    width: 1920,
+    height: 1080
+  },
+  {
+    url: 'images/lightbox/2.png',
     alt: 'default kep',
     title: 'Example title',
     description: 'Example description',
@@ -16,7 +23,7 @@ const images: Array<ImageType & { title: string; description: string; width: num
     height: 1080
   },
   {
-    url: '/lightbox/bg-poharak.png',
+    url: 'images/lightbox/3.png',
     alt: 'poharak kep',
     title: 'Example title',
     description: 'Example description',
@@ -24,16 +31,23 @@ const images: Array<ImageType & { title: string; description: string; width: num
     height: 1080
   },
   {
-    url: '/lightbox/bg-poharak.png',
+    url: 'images/lightbox/4.png',
     alt: 'poharak kep',
     title: 'Example title',
     description: 'Example description',
     width: 1920,
     height: 1080
   },
-  { url: '/lightbox/bg-buli.png', alt: 'bulis kep', title: 'Example title', description: 'Example description', width: 1920, height: 1080 },
   {
-    url: '/lightbox/bg-default.png',
+    url: 'images/lightbox/5.png',
+    alt: 'bulis kep',
+    title: 'Example title',
+    description: 'Example description',
+    width: 1920,
+    height: 1080
+  },
+  {
+    url: 'images/lightbox/6.png',
     alt: 'default kep',
     title: 'Example title',
     description: 'Example description',
@@ -41,7 +55,7 @@ const images: Array<ImageType & { title: string; description: string; width: num
     height: 1080
   },
   {
-    url: '/lightbox/bg-default.png',
+    url: 'images/lightbox/7.png',
     alt: 'default kep',
     title: 'Example title',
     description: 'Example description',
@@ -49,20 +63,27 @@ const images: Array<ImageType & { title: string; description: string; width: num
     height: 1080
   },
   {
-    url: '/lightbox/bg-poharak.png',
+    url: 'images/lightbox/8.png',
     alt: 'poharak kep',
     title: 'Example title',
     description: 'Example description',
     width: 1920,
     height: 1080
   },
-  { url: '/lightbox/bg-buli.png', alt: 'bulis kep', title: 'Example title', description: 'Example description', width: 1920, height: 1080 }
+  {
+    url: 'images/lightbox/9.png',
+    alt: 'bulis kep',
+    title: 'Example title',
+    description: 'Example description',
+    width: 1920,
+    height: 1080
+  }
 ];
 
 const profiles: Array<ProfileType> = [
   {
     profilePicture: {
-      url: '/simonyi/elnokok/1.png',
+      url: 'images/simonyi/elnokok/1.png',
       alt: 'Piller Trisztán'
     },
     name: 'Piller Trisztán',
@@ -82,7 +103,7 @@ const profiles: Array<ProfileType> = [
   },
   {
     profilePicture: {
-      url: '/simonyi/elnokok/2.png',
+      url: 'images/simonyi/elnokok/2.png',
       alt: 'Kis Ákos'
     },
     name: 'Kis Ákos',
@@ -93,7 +114,7 @@ const profiles: Array<ProfileType> = [
   },
   {
     profilePicture: {
-      url: '/simonyi/elnokok/3.png',
+      url: 'images/simonyi/elnokok/3.png',
       alt: 'Jászberényi Áron'
     },
     name: 'Jászberényi Áron',
@@ -115,7 +136,7 @@ const profiles: Array<ProfileType> = [
   },
   {
     profilePicture: {
-      url: '/simonyi/elnokok/4.png',
+      url: 'images/simonyi/elnokok/4.png',
       alt: 'Püspöki Péter'
     },
     name: 'Püspöki Péter',
