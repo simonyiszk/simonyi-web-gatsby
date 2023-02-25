@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, HeadFC, PageProps } from 'gatsby';
-import { Box, Image, Text } from '@chakra-ui/react';
+import { Box, Button, Image, Link, Text } from '@chakra-ui/react';
 import { HomeLayout } from '../layout';
 import { HomeHeader } from '../components/header';
 import { ChevronIcon, SimonyiFullLightIcon } from '../components/icons';
@@ -55,8 +55,22 @@ function Greeting() {
         pb="calc(80px + 2rem)"
       >
         <HomeHeader />
-        <Box maxWidth={353} maxHeight={75} m={8}>
-          <SimonyiFullLightIcon width="100%" height="100%" filter="drop-shadow(0 4px 8px rgb(0, 0, 0, 0.6))" />
+        <Box display="flex" gap={8} flexDirection="column">
+          <Box maxWidth={353} maxHeight={75} m={8}>
+            <SimonyiFullLightIcon width="100%" height="100%" filter="drop-shadow(0 4px 8px rgb(0, 0, 0, 0.6))" />
+          </Box>
+          <Box display="flex" gap={8} flexWrap="wrap" flexDirection="row" justifyContent="space-evenly">
+            <Link href="https://tanfolyam.simonyi.bme.hu/" title="tanfolyam.simonyi.bme.hu" target="_blank">
+              <Button bgColor="simonyi_zold" width={32}>
+                Bérlés
+              </Button>
+            </Link>
+            <Link href="https://termek.sch.bme.hu/" title="termek.sch.bme.hu" target="_blank">
+              <Button bgColor="simonyi_zold" width={32}>
+                Tanfolyam
+              </Button>
+            </Link>
+          </Box>
         </Box>
         <Box>
           <ChevronIcon fill="light" />

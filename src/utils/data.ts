@@ -8,73 +8,113 @@ const about: AboutType = {
 const images: Array<ImageType & { title: string; description: string; width: number; height: number }> = [
   {
     url: 'images/lightbox/1.jpg',
-    alt: 'bulis kep',
-    title: 'Example title',
-    description: 'Example description',
+    alt: '13. Simonyi Konferencia - 2016',
+    title: '13. Simonyi Konferencia - 2016',
+    description: '',
     width: 1920,
     height: 1080
   },
   {
     url: 'images/lightbox/2.jpg',
-    alt: 'default kep',
-    title: 'Example title',
-    description: 'Example description',
+    alt: 'Kutyasétáltatás - 2018',
+    title: 'Kutyasétáltatás - 2018',
+    description: '',
     width: 1920,
     height: 1080
   },
   {
     url: 'images/lightbox/3.jpg',
-    alt: 'poharak kep',
-    title: 'Example title',
-    description: 'Example description',
+    alt: '16. Simonyi Konferencia szervezői gárda - 2019',
+    title: '16. Simonyi Konferencia szervezői gárda - 2019',
+    description: '',
     width: 1920,
     height: 1080
   },
   {
     url: 'images/lightbox/4.jpg',
-    alt: 'poharak kep',
-    title: 'Example title',
-    description: 'Example description',
+    alt: 'HA5KFU az E épület tetején - 2020',
+    title: 'HA5KFU az E épület tetején - 2020',
+    description: '',
     width: 1920,
     height: 1080
   },
   {
     url: 'images/lightbox/5.jpg',
-    alt: 'bulis kep',
-    title: 'Example title',
-    description: 'Example description',
+    alt: 'Simonyi Nyári Tábor vetélkedő - 2021',
+    title: 'Simonyi Nyári Tábor vetélkedő - 2021',
+    description: '',
     width: 1920,
     height: 1080
   },
   {
     url: 'images/lightbox/6.jpg',
-    alt: 'default kep',
-    title: 'Example title',
-    description: 'Example description',
+    alt: 'Simonyi Nyári Tábor csoportkép - 2021',
+    title: 'Simonyi Nyári Tábor csoportkép - 2021',
+    description: '',
     width: 1920,
     height: 1080
   },
   {
     url: 'images/lightbox/7.jpg',
-    alt: 'default kep',
-    title: 'Example title',
-    description: 'Example description',
+    alt: '19. Simonyi Konferencia LEGO stand - 2022',
+    title: '19. Simonyi Konferencia LEGO stand - 2022',
+    description: '',
     width: 1920,
     height: 1080
   },
   {
     url: 'images/lightbox/8.jpg',
-    alt: 'poharak kep',
-    title: 'Example title',
-    description: 'Example description',
+    alt: 'Simonyi Nyári Tábor borkóstoló - 2022',
+    title: 'Simonyi Nyári Tábor borkóstoló - 2022',
+    description: '',
     width: 1920,
     height: 1080
   },
   {
     url: 'images/lightbox/9.jpg',
-    alt: 'bulis kep',
-    title: 'Example title',
-    description: 'Example description',
+    alt: 'Simonyi Nyári Tábor életkép- 2022',
+    title: 'Simonyi Nyári Tábor életkép- 2022',
+    description: '',
+    width: 1920,
+    height: 1080
+  },
+  {
+    url: 'images/lightbox/10.jpg',
+    alt: 'Simonyi Nyári Tábor csoportkép - 2022',
+    title: 'Simonyi Nyári Tábor csoportkép - 2022',
+    description: '',
+    width: 1920,
+    height: 1080
+  },
+  {
+    url: 'images/lightbox/11.jpg',
+    alt: 'Simonyi Nyári Tábor buli- 2022',
+    title: 'Simonyi Nyári Tábor buli- 2022',
+    description: '',
+    width: 1920,
+    height: 1080
+  },
+  {
+    url: 'images/lightbox/12.jpg',
+    alt: 'Simonyi Félévnyitó és Felvételi Vacsora - 2022',
+    title: 'Simonyi Félévnyitó és Felvételi Vacsora - 2022',
+    description: '',
+    width: 1920,
+    height: 1080
+  },
+  {
+    url: 'images/lightbox/13.jpg',
+    alt: '19. Simonyi Születésnapi buli - 2022',
+    title: '19. Simonyi Születésnapi buli - 2022',
+    description: '',
+    width: 1920,
+    height: 1080
+  },
+  {
+    url: 'images/lightbox/14.jpg',
+    alt: 'Simonyi Félévzáró, ami amúgy Szakestély - 2022',
+    title: 'Simonyi Félévzáró, ami amúgy Szakestély - 2022',
+    description: '',
     width: 1920,
     height: 1080
   }
