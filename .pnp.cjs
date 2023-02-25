@@ -35,7 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/styled", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:11.10.5"],\
             ["@fontsource/archivo", "npm:4.5.11"],\
             ["@fontsource/space-grotesk", "npm:4.5.13"],\
-            ["@mdx-js/react", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:2.2.1"],\
+            ["@mdx-js/react", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:2.3.0"],\
             ["@types/node", "npm:18.11.18"],\
             ["@types/react", "npm:18.0.27"],\
             ["@types/react-dom", "npm:18.0.10"],\
@@ -61,6 +61,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.8.3"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:18.2.0"],\
+            ["reading-time", "npm:1.5.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
             ["util", "npm:0.12.5"],\
             ["yet-another-react-lightbox", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:2.3.1"]\
@@ -6047,17 +6048,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@mdx-js/react", [\
-        ["npm:2.2.1", {\
-          "packageLocation": "./.yarn/cache/@mdx-js-react-npm-2.2.1-4655499d67-4462dad1d7.zip/node_modules/@mdx-js/react/",\
+        ["npm:2.3.0", {\
+          "packageLocation": "./.yarn/cache/@mdx-js-react-npm-2.3.0-d5582a450b-f45fe77955.zip/node_modules/@mdx-js/react/",\
           "packageDependencies": [\
-            ["@mdx-js/react", "npm:2.2.1"]\
+            ["@mdx-js/react", "npm:2.3.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:2.2.1", {\
-          "packageLocation": "./.yarn/__virtual__/@mdx-js-react-virtual-71dfdf4c8b/0/cache/@mdx-js-react-npm-2.2.1-4655499d67-4462dad1d7.zip/node_modules/@mdx-js/react/",\
+        ["virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:2.3.0", {\
+          "packageLocation": "./.yarn/__virtual__/@mdx-js-react-virtual-e797662300/0/cache/@mdx-js-react-npm-2.3.0-d5582a450b-f45fe77955.zip/node_modules/@mdx-js/react/",\
           "packageDependencies": [\
-            ["@mdx-js/react", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:2.2.1"],\
+            ["@mdx-js/react", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:2.3.0"],\
             ["@types/mdx", "npm:2.0.3"],\
             ["@types/react", "npm:18.0.27"],\
             ["react", "npm:18.2.0"]\
@@ -14027,7 +14028,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["gatsby-plugin-mdx", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:5.5.0"],\
             ["@mdx-js/mdx", "npm:2.2.1"],\
-            ["@mdx-js/react", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:2.2.1"],\
+            ["@mdx-js/react", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:2.3.0"],\
             ["@types/gatsby", null],\
             ["@types/gatsby-source-filesystem", null],\
             ["@types/mdx-js__react", null],\
@@ -14358,7 +14359,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mime", "npm:3.0.0"],\
             ["pretty-bytes", "npm:5.6.0"],\
             ["valid-url", "npm:1.0.9"],\
-            ["xstate", "npm:4.35.4"]\
+            ["xstate", "npm:4.37.0"]\
           ],\
           "packagePeers": [\
             "@types/gatsby",\
@@ -20659,6 +20660,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["reading-time", [\
+        ["npm:1.5.0", {\
+          "packageLocation": "./.yarn/cache/reading-time-npm-1.5.0-be83d947c6-e27bc5a70b.zip/node_modules/reading-time/",\
+          "packageDependencies": [\
+            ["reading-time", "npm:1.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["recursive-readdir", [\
         ["npm:2.2.3", {\
           "packageLocation": "./.yarn/cache/recursive-readdir-npm-2.2.3-3f177ebd90-88ec96e276.zip/node_modules/recursive-readdir/",\
@@ -21507,7 +21517,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/styled", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:11.10.5"],\
             ["@fontsource/archivo", "npm:4.5.11"],\
             ["@fontsource/space-grotesk", "npm:4.5.13"],\
-            ["@mdx-js/react", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:2.2.1"],\
+            ["@mdx-js/react", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:2.3.0"],\
             ["@types/node", "npm:18.11.18"],\
             ["@types/react", "npm:18.0.27"],\
             ["@types/react-dom", "npm:18.0.10"],\
@@ -21533,6 +21543,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.8.3"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:18.2.0"],\
+            ["reading-time", "npm:1.5.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
             ["util", "npm:0.12.5"],\
             ["yet-another-react-lightbox", "virtual:6b44056332dc9cf1ae0e4579e6e1806c22bc5d2b23268e065103141f73798589e62e08fe369db450fecff175a15757782f35fce8e88a79633c4cadc74fc18289#npm:2.3.1"]\
@@ -23837,6 +23848,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/xstate-npm-4.35.4-6075ea986b-92fcf15e80.zip/node_modules/xstate/",\
           "packageDependencies": [\
             ["xstate", "npm:4.35.4"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:4.37.0", {\
+          "packageLocation": "./.yarn/cache/xstate-npm-4.37.0-22473be933-8eba107721.zip/node_modules/xstate/",\
+          "packageDependencies": [\
+            ["xstate", "npm:4.37.0"]\
           ],\
           "linkType": "HARD"\
         }]\
