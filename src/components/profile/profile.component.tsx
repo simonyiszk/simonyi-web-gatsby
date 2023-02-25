@@ -28,7 +28,9 @@ function Profile({ name, title, profilePicture, socials }: ProfileType) {
               borderRadius: '50%',
               borderStyle: 'solid',
               borderWidth: '2px',
-              borderColor: 'var(--chakra-colors-simonyi_zold)'
+              borderColor: 'var(--chakra-colors-simonyi_zold)',
+              position: 'relative',
+              zIndex: 0
             }}
           />
         ) : (
