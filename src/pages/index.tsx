@@ -69,8 +69,8 @@ function Headlines() {
       flexWrap="wrap"
       pb="calc(80px + 2rem)"
     >
-      {headlines.map((headline, index) => (
-        <Box key={index} width="250px">
+      {headlines.map((headline) => (
+        <Box key={headline} width="250px">
           <Text as="h1" textAlign="center" dangerouslySetInnerHTML={{ __html: headline }} />
         </Box>
       ))}
@@ -102,7 +102,7 @@ function ImageBrowser() {
     >
       {images.slice(0, 9).map((image, index) => (
         <Box
-          key={index}
+          key={image.url}
           width="177.05px"
           height="100px"
           bgColor="#000000"
@@ -162,8 +162,8 @@ function StudentGroups() {
         flexWrap="wrap"
         width="100%"
       >
-        {groups.map((group, index) => (
-          <StudentGroup key={index} name={group.name} description={group.description} logo={group.logo} socials={group.socials} />
+        {groups.map((group) => (
+          <StudentGroup key={group.name} name={group.name} description={group.description} logo={group.logo} socials={group.socials} />
         ))}
       </Box>
     </Box>
@@ -177,9 +177,9 @@ function Presidency() {
         <Text as="h1">Elnökség</Text>
       </Box>
       <Box alignSelf="center" display="flex" justifyContent="center" flexDirection="row" gap="2rem" flexWrap="wrap" width="100%">
-        {profiles.map((profile, index) => (
+        {profiles.map((profile) => (
           <Profile
-            key={index}
+            key={profile.name}
             profilePicture={profile.profilePicture}
             name={profile.name}
             title={profile.title}

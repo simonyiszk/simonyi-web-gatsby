@@ -56,12 +56,12 @@ function StudentGroup({ name, logo, description, socials = [] }: StudentGroupTyp
       </Box>
       {(!isMobile || isOpen) && (
         <Box display="flex" justifyContent="center" gap="1.25rem" flexWrap="wrap">
-          {socials.map((social, index) => (
+          {socials.map((social) => (
             <Link
               href={social.link.url}
               title={social.link.title}
               target="_blank"
-              key={index}
+              key={social.link.url}
               px="13px"
               py="6px"
               bgColor="simonyi_zold"

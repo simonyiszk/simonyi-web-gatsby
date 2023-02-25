@@ -36,8 +36,8 @@ function Profile({ name, title, profilePicture, socials }: ProfileType) {
         {title}
       </Text>
       <Box display="flex" justifyContent="center" gap="1.75rem" mt="1.75rem" flexWrap="wrap">
-        {socials.map((social, index) => (
-          <Link href={social.link.url} title={social.link.title} target="_blank" key={index}>
+        {socials.map((social) => (
+          <Link href={social.link.url} title={social.link.title} target="_blank" key={social.link.url}>
             <SocialIcon iconName={social.icon} props={{ boxSize: '1.5rem', fill: 'simonyi_zold' }} />
           </Link>
         ))}
