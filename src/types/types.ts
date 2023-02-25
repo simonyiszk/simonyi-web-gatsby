@@ -1,5 +1,4 @@
-import { IGatsbyImageData } from 'gatsby-plugin-image';
-
+import { IGatsbyImageData, ImageDataLike } from 'gatsby-plugin-image';
 type SocialIconType = 'email' | 'facebook' | 'github' | 'instagram' | 'linkedin' | 'phone' | 'youtube' | 'website';
 
 type AboutType = {
@@ -40,4 +39,13 @@ type StudentGroupType = {
   socials: SocialType[];
 };
 
-export { AboutType, ImageType, ProfileType, StudentGroupType, SocialIconType, SocialType };
+type BlogPostType = {
+  layout: 'blog';
+  date: string;
+  title: string;
+  lead: string;
+  featuredImage: ImageDataLike;
+  ogImage: ImageDataLike;
+};
+
+export { AboutType, ImageType, ProfileType, StudentGroupType, SocialIconType, SocialType, BlogPostType };

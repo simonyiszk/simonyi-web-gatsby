@@ -1,0 +1,103 @@
+{
+  "github": {
+    "silent": true
+  },
+
+  "redirects": [
+    {
+      "source": "/ntp2020/:path*",
+      "destination": "https://old.simonyi.bme.hu/ntp2020/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ntp2021/:path*",
+      "destination": "https://old.simonyi.bme.hu/ntp2021/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/docs/:path*",
+      "destination": "https://old.simonyi.bme.hu/docs/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://old.simonyi.bme.hu/blog/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/drive/:path*",
+      "destination": "https://old.simonyi.bme.hu/drive/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/szakmaihet/:path*",
+      "destination": "https://old.simonyi.bme.hu/szakmaihet/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/szakmaihet2020/:path*",
+      "destination": "https://old.simonyi.bme.hu/szakmaihet2020/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/tankor/:path*",
+      "destination": "https://old.simonyi.bme.hu/tankor/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/tippelj/:path*",
+      "destination": "https://old.simonyi.bme.hu/tippelj/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/wiki/:path*",
+      "destination": "https://old.simonyi.bme.hu/wiki/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/tanfolyam/:path*",
+      "destination": "https://tanfolyam.simonyi.bme.hu/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/bss/:path*",
+      "destination": "https://bsstudio.hu/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ac/:path*",
+      "destination": "https://acstudio.sch.bme.hu/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ha5kfu/:path*",
+      "destination": "https://ha5kfu.hu/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/kir-dev/:path*",
+      "destination": "https://kir-dev.hu/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/lego/:path*",
+      "destination": "https://legokor.hu/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/schdesign/:path*",
+      "destination": "https://schdesign.hu/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/sem/:path*",
+      "destination": "https://sem.sch.bme.hu/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/spot/:path*",
+      "destination": "https://spot.sch.bme.hu/:path*",
+      "permanent": true
+    }
+  ]
+}

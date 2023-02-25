@@ -59,14 +59,6 @@ const config: GatsbyConfig = {
       }
     },
 
-    /* See: https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/ */
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        gatsbyRemarkPlugins: []
-      }
-    },
-
     /* See: https://www.gatsbyjs.com/plugins/gatsby-plugin-image/ */
     'gatsby-plugin-image',
     {
@@ -87,14 +79,6 @@ const config: GatsbyConfig = {
         path: `${__dirname}/src/images/`
       }
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'pages',
-        path: './src/pages/'
-      },
-      __key: 'pages'
-    },
 
     /* See: https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/ */
     {
@@ -102,6 +86,22 @@ const config: GatsbyConfig = {
       options: {
         trackingIds: [process.env.GOOGLE_ANALYTICS_ID]
       }
+    },
+
+    /* See: https://www.gatsbyjs.com/docs/how-to/routing/mdx/ and https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/  */
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: []
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pages',
+        path: './src/pages/'
+      },
+      __key: 'pages'
     }
   ]
 };
