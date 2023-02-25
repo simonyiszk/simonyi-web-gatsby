@@ -1,3 +1,3 @@
-import { AboutType, ImageType, StudentGroupType, ProfileType, SocialIconType, SocialType } from './types';
+import { AboutType, ImageType, StudentGroupType, ProfileType, SocialIconType, SocialType, BlogPostType } from './types';
 
-export { AboutType, ImageType, StudentGroupType, ProfileType, SocialIconType, SocialType };
+export { AboutType, ImageType, StudentGroupType, ProfileType, SocialIconType, SocialType, BlogPostType };
