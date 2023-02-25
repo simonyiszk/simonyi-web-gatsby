@@ -60,7 +60,7 @@ function Greeting() {
             <SimonyiFullLightIcon width="100%" height="100%" filter="drop-shadow(0 4px 8px rgb(0, 0, 0, 0.6))" />
           </Box>
           <Box display="flex" gap={8} flexWrap="wrap" flexDirection="row" justifyContent="space-evenly">
-            <Link href="https://termek.sch.bme.hu/" title="termek.sch.bme.hu" target="_blank">
+            <Link href="https://tanfolyam.simonyi.bme.hu/" title="tanfolyam.simonyi.bme.hu" target="_blank">
               <Button
                 borderWidth={2}
                 borderColor="simonyi_zold"
@@ -71,7 +71,7 @@ function Greeting() {
                 Tanfolyam
               </Button>
             </Link>
-            <Link href="https://tanfolyam.simonyi.bme.hu/" title="tanfolyam.simonyi.bme.hu" target="_blank">
+            <Link href="https://termek.sch.bme.hu/" title="termek.sch.bme.hu" target="_blank">
               <Button
                 borderWidth={2}
                 borderColor="simonyi_zold"
