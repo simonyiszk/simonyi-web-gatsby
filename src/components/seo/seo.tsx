@@ -3,6 +3,7 @@ import { format } from 'util';
 import { useSiteMetadata } from '../../hooks';
 
 function SEO({
+  themeColor,
   title,
   titleTemplate,
   description,
@@ -26,6 +27,7 @@ function SEO({
   twitterCreator,
   children
 }: {
+  themeColor?: string;
   title?: string;
   titleTemplate?: string;
   description?: string;
@@ -50,6 +52,7 @@ function SEO({
   children?: React.ReactNode;
 }) {
   const {
+    themeColor: defaultThemeColor,
     title: defaultTitle,
     titleTemplate: defaultTitleTemplate,
     description: defaultDescription,
@@ -65,6 +68,7 @@ function SEO({
   } = useSiteMetadata();
 
   const seo = {
+    themeColor: themeColor || defaultThemeColor,
     title: title ? format(titleTemplate || defaultTitleTemplate, title) : defaultTitle,
     description: description || defaultDescription,
     image: `${siteUrl || defaultSiteUrl}${image || defaultImage}`,
@@ -96,6 +100,7 @@ function SEO({
 
   return (
     <>
+      <meta name="theme-color" content={seo.themeColor} />
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />

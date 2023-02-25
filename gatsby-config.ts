@@ -10,10 +10,11 @@ const config: GatsbyConfig = {
     DEV_SSR: true
   },
   siteMetadata: {
+    themeColor: '#63BC47',
     title: `Simonyi Károly Szakkollégium`,
-    titleTemplate: `%s | Simonyi Károly Szakkollégium`,
+    titleTemplate: `%s - Simonyi Károly Szakkollégium`,
     description:
-      'A Simonyi Károly Szakkollégium egy hallgatói szakmai szervezet, amely a BME Villamosmérnöki és Informatikai Karán működik.',
+      'A Simonyi Károly Szakkollégium egy hallgatói szakmai szervezet, amely a BME Villamosmérnöki és Informatikai Karán működik. Tagjai a villamosmérnöki és informatikai szakma közel teljes palettáját művelik stúdiótechnikától kezdve a webdesign és -fejlesztésen át az elektronikáig, sőt robotikáig.',
     siteUrl: `https://simonyi.bme.hu`,
     image: '/cover.png',
     ogType: 'website',
@@ -21,7 +22,7 @@ const config: GatsbyConfig = {
     ogImageWidth: '960',
     ogImageHeight: '540',
     twitterCard: 'summary_large_image',
-    twitterImageAlt: 'A picture showing the logo of Simonyi Károly Szakkollégium',
+    twitterImageAlt: 'Simonyi Károly Szakkollégium - Simonyi Károly College for Advanced Studies',
     twitterSite: 'simonyiszakkoli',
     twitterCreator: 'simonyiszakkoli'
   },
@@ -54,22 +55,29 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/simonyi-logo.svg'
+        icon: 'static/favicon.svg'
       }
     },
 
     /* See: https://www.gatsbyjs.com/plugins/gatsby-plugin-image/ */
     'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaults: {
+          formats: ['png'],
+          quality: 50,
+          backgroundColor: 'transparent'
+        }
+      }
+    },
     'gatsby-transformer-sharp',
-
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: './src/images/'
-      },
-      __key: 'images'
+        path: `${__dirname}/src/images/`
+      }
     },
 
     /* See: https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/ */

@@ -1,15 +1,17 @@
-import { ImageDataLike } from 'gatsby-plugin-image';
-
+import { IGatsbyImageData, ImageDataLike } from 'gatsby-plugin-image';
 type SocialIconType = 'email' | 'facebook' | 'github' | 'instagram' | 'linkedin' | 'phone' | 'youtube' | 'website';
 
 type AboutType = {
   title: string;
   text: string;
+  wikiUrl: string;
 };
 
 type ImageType = {
   url: string;
   alt: string;
+  gatsbyImageOriginalUrl?: string;
+  gatsbyImageData?: IGatsbyImageData;
 };
 
 type LinkType = {

@@ -1,4 +1,4 @@
-import { about, headlines, images, groups, profiles } from './data';
+import { about, images, groups, profiles } from './data';
 import { isBrowser } from './functions';
 
-export { about, headlines, images, groups, profiles, isBrowser };
+export { about, images, groups, profiles, isBrowser };

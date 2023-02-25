@@ -5,6 +5,7 @@ export const useSiteMetadata = () => {
     query {
       site {
         siteMetadata {
+          themeColor
           title
           titleTemplate
           description

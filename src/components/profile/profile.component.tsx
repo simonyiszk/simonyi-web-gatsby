@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Image, Link, Text } from '@chakra-ui/react';
 import type { ProfileType } from '../../types';
 import { SocialIcon } from '../icons';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 function Profile({ name, title, profilePicture, socials }: ProfileType) {
   return (
@@ -17,18 +18,36 @@ function Profile({ name, title, profilePicture, socials }: ProfileType) {
       width="100%"
     >
       <Box width="100%" height="100%" maxWidth="200px" maxHeight="200px">
-        <Image
-          src={profilePicture.url}
-          alt={profilePicture.alt}
-          objectFit="contain"
-          width="100%"
-          height="100%"
-          borderRadius="50%"
-          borderStyle="solid"
-          borderWidth={2}
-          borderColor="simonyi_zold"
-        />
+        {profilePicture.gatsbyImageData ? (
+          <GatsbyImage
+            alt={profilePicture.alt}
+            image={profilePicture.gatsbyImageData}
+            style={{
+              lineHeight: '200px',
+              textAlign: 'center',
+              borderRadius: '50%',
+              borderStyle: 'solid',
+              borderWidth: '2px',
+              borderColor: 'var(--chakra-colors-simonyi_zold)'
+            }}
+          />
+        ) : (
+          <Image
+            src={profilePicture.url}
+            alt={profilePicture.alt}
+            objectFit="contain"
+            width="100%"
+            height="100%"
+            lineHeight="200px"
+            textAlign="center"
+            borderRadius="50%"
+            borderStyle="solid"
+            borderWidth={2}
+            borderColor="simonyi_zold"
+          />
+        )}
       </Box>
+
       <Text as="h2" align="center">
         {name}
       </Text>
