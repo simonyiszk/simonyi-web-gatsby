@@ -37,7 +37,14 @@ function Greeting() {
         filter="blur(10px)"
         display="flex"
       >
-        <StaticImage src="../images/hero/default.png" alt="Hero image" objectFit="cover" style={{ height: '100%', width: '100%' }} />
+        <StaticImage
+          src="../images/hero/default.png"
+          alt="Hero image"
+          objectFit="cover"
+          style={{ height: '100%', width: '100%' }}
+          placeholder="none"
+          loading="eager"
+        />
       </Box>
       <Box
         display="flex"

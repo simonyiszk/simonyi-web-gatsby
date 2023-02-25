@@ -6,13 +6,20 @@ function HomeHeader() {
   return (
     <Box display="flex" columnGap={16} rowGap={8} justifyContent="center" alignItems="center" flexWrap="wrap" p={8}>
       <Link href="http://www.bme.hu/" target="_blank">
-        <StaticImage src="../../images/bme/bme.png" alt="Logo of BME" height={50} />
+        <StaticImage src="../../images/bme/bme.png" alt="Logo of BME" height={50} placeholder="none" layout="constrained" loading="eager" />
       </Link>
       <Link href="http://www.vik.bme.hu/" target="_blank">
-        <StaticImage src="../../images/bme/vik.png" alt="Logo of BME" height={50} />
+        <StaticImage src="../../images/bme/vik.png" alt="Logo of BME" height={50} placeholder="none" layout="constrained" loading="eager" />
       </Link>
       <Link href="https://svie.hu/" target="_blank" width={{ base: 'auto', md: '188px' }}>
-        <StaticImage src="../../images/bme/schonherz.png" alt="Logo of BME" height={50} />
+        <StaticImage
+          src="../../images/bme/schonherz.png"
+          alt="Logo of BME"
+          height={50}
+          placeholder="none"
+          layout="constrained"
+          loading="eager"
+        />
       </Link>
     </Box>
   );

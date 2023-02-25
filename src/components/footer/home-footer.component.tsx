@@ -71,13 +71,13 @@ function HomeFooter() {
       </Box>
       <Box display="flex" gap={8} flexWrap="wrap" alignItems="center" flexDirection={{ base: 'column', md: 'row' }}>
         <Link href="http://www.bme.hu/" target="_blank">
-          <StaticImage src="../../images/bme/bme.png" alt="Logo of BME" height={60} />
+          <StaticImage src="../../images/bme/bme.png" alt="Logo of BME" height={60} placeholder="none" loading="lazy" />
         </Link>
         <Link href="http://www.vik.bme.hu/" target="_blank">
-          <StaticImage src="../../images/bme/vik.png" alt="Logo of BME" height={60} />
+          <StaticImage src="../../images/bme/vik.png" alt="Logo of BME" height={60} placeholder="none" loading="lazy" />
         </Link>
         <Link href="https://svie.hu/" target="_blank" width={{ base: 'auto', md: '225px' }}>
-          <StaticImage src="../../images/bme/schonherz.png" alt="Logo of BME" height={60} />
+          <StaticImage src="../../images/bme/schonherz.png" alt="Logo of BME" height={60} placeholder="none" loading="lazy" />
         </Link>
       </Box>
       <Link href="https://github.com/simonyiszk/simonyi-web-gatsby">
