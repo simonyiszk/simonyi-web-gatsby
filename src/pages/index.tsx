@@ -60,24 +60,26 @@ function Greeting() {
             <SimonyiFullLightIcon width="100%" height="100%" filter="drop-shadow(0 4px 8px rgb(0, 0, 0, 0.6))" />
           </Box>
           <Box display="flex" gap={8} flexWrap="wrap" flexDirection="row" justifyContent="space-evenly">
-            <Link href="https://tanfolyam.simonyi.bme.hu/" title="tanfolyam.simonyi.bme.hu" target="_blank">
-              <Button
-                borderWidth={2}
-                _hover={{ borderColor: 'simonyi_zold', bgColor: 'var(--chakra-colors-whiteAlpha-300)' }}
-                bgColor="simonyi_zold"
-                width={32}
-              >
-                Bérlés
-              </Button>
-            </Link>
             <Link href="https://termek.sch.bme.hu/" title="termek.sch.bme.hu" target="_blank">
               <Button
                 borderWidth={2}
-                _hover={{ borderColor: 'simonyi_zold', bgColor: 'var(--chakra-colors-whiteAlpha-300)' }}
-                bgColor="simonyi_zold"
+                borderColor="simonyi_zold"
+                _hover={{ bgColor: 'simonyi_zold' }}
+                bgColor="var(--chakra-colors-whiteAlpha-300)"
                 width={32}
               >
                 Tanfolyam
+              </Button>
+            </Link>
+            <Link href="https://tanfolyam.simonyi.bme.hu/" title="tanfolyam.simonyi.bme.hu" target="_blank">
+              <Button
+                borderWidth={2}
+                borderColor="simonyi_zold"
+                _hover={{ bgColor: 'simonyi_zold' }}
+                bgColor="var(--chakra-colors-whiteAlpha-300)"
+                width={32}
+              >
+                Bérlés
               </Button>
             </Link>
           </Box>
