@@ -4,9 +4,10 @@ import { createFilePath } from 'gatsby-source-filesystem';
 
 export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
-  const slug = createFilePath({ node, getNode, basePath: `pages` });
 
   if (node.internal.type === `Mdx`) {
+    const slug = createFilePath({ node, getNode, basePath: `pages` });
+
     createNodeField({
       node,
       name: `timeToRead`,
