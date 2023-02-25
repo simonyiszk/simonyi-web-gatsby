@@ -22,7 +22,7 @@ const config: GatsbyConfig = {
     ogImageWidth: '960',
     ogImageHeight: '540',
     twitterCard: 'summary_large_image',
-    twitterImageAlt: 'A picture showing the logo of Simonyi Károly Szakkollégium',
+    twitterImageAlt: 'Simonyi Károly Szakkollégium - Simonyi Károly College for Advanced Studies',
     twitterSite: 'simonyiszakkoli',
     twitterCreator: 'simonyiszakkoli'
   },
