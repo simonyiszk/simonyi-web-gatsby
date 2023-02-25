@@ -10,6 +10,7 @@ type AboutType = {
 type ImageType = {
   url: string;
   alt: string;
+  gatsbyImageOriginalUrl?: string;
   gatsbyImageData?: IGatsbyImageData;
 };
 

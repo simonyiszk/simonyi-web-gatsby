@@ -7,7 +7,7 @@ const about: AboutType = {
 
 const images: Array<ImageType & { title: string; description: string; width: number; height: number }> = [
   {
-    url: 'images/lightbox/1.png',
+    url: 'images/lightbox/1.jpg',
     alt: 'bulis kep',
     title: 'Example title',
     description: 'Example description',
@@ -15,7 +15,7 @@ const images: Array<ImageType & { title: string; description: string; width: num
     height: 1080
   },
   {
-    url: 'images/lightbox/2.png',
+    url: 'images/lightbox/2.jpg',
     alt: 'default kep',
     title: 'Example title',
     description: 'Example description',
@@ -23,7 +23,7 @@ const images: Array<ImageType & { title: string; description: string; width: num
     height: 1080
   },
   {
-    url: 'images/lightbox/3.png',
+    url: 'images/lightbox/3.jpg',
     alt: 'poharak kep',
     title: 'Example title',
     description: 'Example description',
@@ -31,7 +31,7 @@ const images: Array<ImageType & { title: string; description: string; width: num
     height: 1080
   },
   {
-    url: 'images/lightbox/4.png',
+    url: 'images/lightbox/4.jpg',
     alt: 'poharak kep',
     title: 'Example title',
     description: 'Example description',
@@ -39,7 +39,7 @@ const images: Array<ImageType & { title: string; description: string; width: num
     height: 1080
   },
   {
-    url: 'images/lightbox/5.png',
+    url: 'images/lightbox/5.jpg',
     alt: 'bulis kep',
     title: 'Example title',
     description: 'Example description',
@@ -47,7 +47,7 @@ const images: Array<ImageType & { title: string; description: string; width: num
     height: 1080
   },
   {
-    url: 'images/lightbox/6.png',
+    url: 'images/lightbox/6.jpg',
     alt: 'default kep',
     title: 'Example title',
     description: 'Example description',
@@ -55,7 +55,7 @@ const images: Array<ImageType & { title: string; description: string; width: num
     height: 1080
   },
   {
-    url: 'images/lightbox/7.png',
+    url: 'images/lightbox/7.jpg',
     alt: 'default kep',
     title: 'Example title',
     description: 'Example description',
@@ -63,7 +63,7 @@ const images: Array<ImageType & { title: string; description: string; width: num
     height: 1080
   },
   {
-    url: 'images/lightbox/8.png',
+    url: 'images/lightbox/8.jpg',
     alt: 'poharak kep',
     title: 'Example title',
     description: 'Example description',
@@ -71,7 +71,7 @@ const images: Array<ImageType & { title: string; description: string; width: num
     height: 1080
   },
   {
-    url: 'images/lightbox/9.png',
+    url: 'images/lightbox/9.jpg',
     alt: 'bulis kep',
     title: 'Example title',
     description: 'Example description',

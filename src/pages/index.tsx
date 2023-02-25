@@ -102,7 +102,7 @@ function ImageBrowser({ imagesData }: { imagesData: { images: typeof images } })
         open={isOpen}
         slides={imagesData.images.map((image) => {
           return {
-            src: image.gatsbyImageData?.images.fallback?.src ? image.gatsbyImageData.images.fallback.src : image.url,
+            src: image.gatsbyImageOriginalUrl ? image.gatsbyImageOriginalUrl : image.url,
             alt: image.alt,
             title: image.title,
             description: image.description,
@@ -182,7 +182,11 @@ const IndexPage = ({ data }: PageProps<Queries.homePageQuery>) => {
     images: images.map((image) => {
       return {
         ...image,
-        gatsbyImageData: data.images.edges.find((edge) => {
+        gatsbyImageOriginalUrl:
+          data.lightbox.edges.find((edge) => {
+            return `images/${edge.node.relativePath}` === image.url;
+          })?.node.childImageSharp?.original?.src || undefined,
+        gatsbyImageData: data.lightbox.edges.find((edge) => {
           return `images/${edge.node.relativePath}` === image.url;
         })?.node.childImageSharp?.gatsbyImageData
       };
@@ -195,7 +199,7 @@ const IndexPage = ({ data }: PageProps<Queries.homePageQuery>) => {
         ...profile,
         profilePicture: {
           ...profile.profilePicture,
-          gatsbyImageData: data.images.edges.find((edge) => {
+          gatsbyImageData: data.simonyi_elnokok.edges.find((edge) => {
             return `images/${edge.node.relativePath}` === profile.profilePicture.url;
           })?.node.childImageSharp?.gatsbyImageData
         }
@@ -218,12 +222,27 @@ const IndexPage = ({ data }: PageProps<Queries.homePageQuery>) => {
 
 export const query = graphql`
   query homePage {
-    images: allFile(filter: { sourceInstanceName: { eq: "images" } }) {
+    simonyi_elnokok: allFile(filter: { sourceInstanceName: { eq: "images" }, relativeDirectory: { eq: "simonyi/elnokok" } }) {
       edges {
         node {
           relativePath
           childImageSharp {
             gatsbyImageData(layout: CONSTRAINED)
+          }
+        }
+      }
+    }
+    lightbox: allFile(filter: { sourceInstanceName: { eq: "images" }, relativeDirectory: { eq: "lightbox" } }) {
+      edges {
+        node {
+          relativePath
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH, quality: 100)
+            original {
+              src
+              width
+              height
+            }
           }
         }
       }

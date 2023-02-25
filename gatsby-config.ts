@@ -69,7 +69,16 @@ const config: GatsbyConfig = {
 
     /* See: https://www.gatsbyjs.com/plugins/gatsby-plugin-image/ */
     'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaults: {
+          formats: ['png'],
+          quality: 50,
+          backgroundColor: 'transparent'
+        }
+      }
+    },
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
