@@ -15,7 +15,7 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, getNode, action
     createNodeField({
       node,
       name: `slug`,
-      value: `/${slug}`
+      value: slug
     });
   }
 };

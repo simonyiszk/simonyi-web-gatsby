@@ -3,6 +3,7 @@ import { EmailIcon, FacebookIcon, GitHubIcon, GlobeIcon, InstagramIcon, LinkedIn
 import { ChevronIcon } from './chevron-icon.component';
 import { IncreaseIcon } from './increase-icon.component';
 import { SocialIcon } from './social-icon.component';
+import { ClockIcon } from './clock-icon.component';
 
 export {
   ChevronIcon,
@@ -18,5 +19,6 @@ export {
   SimonyiFullDarkIcon,
   SimonyiFullLightIcon,
   SimonyiLogoIcon,
-  SocialIcon
+  SocialIcon,
+  ClockIcon
 };
