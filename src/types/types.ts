@@ -39,7 +39,7 @@ type StudentGroupType = {
 
 type BlogPostType = {
   layout: 'blog';
-  date: Date;
+  date: string;
   title: string;
   lead: string;
   featuredImage: ImageDataLike;

@@ -1,7 +1,7 @@
-import React from 'react';
-import { Box, chakra, Flex, Heading, Image, Text, useColorModeValue } from '@chakra-ui/react';
-import { graphql, HeadFC, Link, PageProps } from 'gatsby';
+import { Box, Flex, Grid, Heading, HStack, Image, Link, Text, useBreakpointValue, useColorModeValue } from '@chakra-ui/react';
+import { graphql, HeadFC, Link as GatsbyLink, PageProps } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import React from 'react';
 import 'yet-another-react-lightbox/plugins/captions.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import 'yet-another-react-lightbox/styles.css';
@@ -27,9 +27,9 @@ export const BlogPreviewCard: React.FC<{ post: BlogPostType & BlogPostFields }> 
       <Flex direction={{ base: 'column', sm: 'row' }} justifyContent="space-between">
         <Flex flex={1} position="relative" mr={{ base: 0, sm: 2 }} pb={{ base: 2, sm: 0 }}>
           <Box w="85%" zIndex={2}>
-            <Link to={slug}>
+            <GatsbyLink to={slug}>
               {image ? <GatsbyImage image={image} alt="Blog preview" objectFit="contain" /> : <Image src="../../post-default.jpg" />}
-            </Link>
+            </GatsbyLink>
           </Box>
           <Box zIndex={1} w="100%" h="100%" position="absolute" ml={1} mt={1}>
             <Box bgGradient="radial(orange.400 1px, transparent 1px)" bgSize={{ base: '1.5rem 1.5rem', sm: '1rem 1rem' }} h="100%" />
@@ -40,19 +40,14 @@ export const BlogPreviewCard: React.FC<{ post: BlogPostType & BlogPostFields }> 
             {title}
           </Heading>
           <Box mt={1} fontWeight="light" textColor={useColorModeValue('gray.600', 'gray.400')}>
-            <Box display="inline-block" pr={1}>
-              <ClockIcon />
-            </Box>
-            <chakra.span fontSize="sm">
-              {minutes}&nbsp;perc{lead ? ` • ${lead}` : ''}
-            </chakra.span>
+            {lead}
           </Box>
         </Flex>
       </Flex>
       <Flex flex={1} h="fit-content" direction="column" justifyContent="flex-end">
-        <Flex justifyContent="space-between" direction={{ base: 'column', sm: 'row' }} flexWrap="wrap" pt={4}>
-          <Text fontWeight="light" fontSize="md" textColor={useColorModeValue('gray.600', 'gray.400')}>
-            {date.toLocaleTimeString('hu-HU', {
+        <HStack flexWrap="wrap" pt={4}>
+          <Text>
+            {new Date(date).toLocaleTimeString('hu-HU', {
               weekday: 'long',
               year: 'numeric',
               month: 'long',
@@ -61,7 +56,10 @@ export const BlogPreviewCard: React.FC<{ post: BlogPostType & BlogPostFields }> 
               minute: '2-digit'
             })}
           </Text>
-        </Flex>
+          <Text>&bull;</Text>
+          <ClockIcon fill="currentColor" />
+          <Text>{Math.ceil(minutes)}&nbsp;perc</Text>
+        </HStack>
       </Flex>
     </Flex>
   );
@@ -77,6 +75,7 @@ type BlogPostFields = {
 type BlogQuery = {
   allMdx: {
     nodes: {
+      id: string;
       fields: BlogPostFields;
       frontmatter: BlogPostType;
     }[];
@@ -84,14 +83,22 @@ type BlogQuery = {
 };
 
 const BlogPage: React.FC<PageProps<BlogQuery>> = ({ data }) => {
-  const posts = data.allMdx.nodes.map((node) => ({ ...node.frontmatter, ...node.fields }));
+  const posts = data.allMdx.nodes.map((node) => ({ ...node.frontmatter, ...node.fields, id: node.id }));
+  const numberOfCols = useBreakpointValue({ base: 1, md: 2 });
 
   return (
     <SubpageLayout>
       <Box maxWidth="1496px" mx="auto" p={8}>
-        {posts.map((post) => (
-          <BlogPreviewCard key={post.title} post={post} />
-        ))}
+        <Grid templateColumns={`repeat(${numberOfCols}, 1fr)`} gap={{ base: 24, sm: 10 }}>
+          {posts.map((post) => (
+            <BlogPreviewCard key={post.id} post={post} />
+          ))}
+        </Grid>
+        <Box textAlign="right" mt={8}>
+          <Link as={GatsbyLink} fontSize="lg" to="/archive">
+            Még több...
+          </Link>
+        </Box>
       </Box>
     </SubpageLayout>
   );
@@ -103,15 +110,13 @@ export const Head: HeadFC = () => <SEO title="Blog" />;
 
 export const query = graphql`
   query BlogQuery {
-    allMdx(filter: { frontmatter: { layout: { eq: "blog" } } }) {
+    allMdx(filter: { frontmatter: { layout: { eq: "blog" } } }, limit: 4, sort: { frontmatter: { date: ASC } }) {
       nodes {
+        id
         fields {
           slug
           timeToRead {
             minutes
-            text
-            time
-            words
           }
         }
         frontmatter {
@@ -121,7 +126,6 @@ export const query = graphql`
               gatsbyImageData(width: 200, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
             }
           }
-          layout
           lead
           title
         }

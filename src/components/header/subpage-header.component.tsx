@@ -17,9 +17,9 @@ function SubpageHeader() {
     >
       <SimonyiFullLightIcon width="10em" height="100%" />
       <HStack>
-        <GatsbyLink to="/">
-          <Link>Kezdőlap</Link>
-        </GatsbyLink>
+        <Link as={GatsbyLink} to="/">
+          Kezdőlap
+        </Link>
       </HStack>
     </Box>
   );
