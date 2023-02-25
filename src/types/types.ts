@@ -5,6 +5,7 @@ type SocialIconType = 'email' | 'facebook' | 'github' | 'instagram' | 'linkedin'
 type AboutType = {
   title: string;
   text: string;
+  wikiUrl: string;
 };
 
 type ImageType = {

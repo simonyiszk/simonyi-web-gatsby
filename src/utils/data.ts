@@ -2,7 +2,8 @@ import type { ProfileType, StudentGroupType, AboutType, ImageType } from '../typ
 
 const about: AboutType = {
   title: 'A szakkoli',
-  text: 'A Simonyi Károly Szakkollégium egy hallgatói szakmai szervezet, amely a BME Villamosmérnöki és Informatikai Karán működik. A szakkollégium 2003-ban vette fel Simonyi Károly, a Kar rajongva tisztelt professzora nevét. A Simonyi Károly Szakkollégium célja, hogy tagjai és a Kar hallgatói számára lehetőséget biztosítson az egyetemi képzést kiegészítő ismeretek elsajátítására. Ennek érdekében tanfolyamokat, konferenciákat és más szakmai rendezvényeket szervez, infrastruktúrával támogatja a hallgatók önálló szakmai munkáit. A szakkollégium céljai közé tartozik, hogy a tagjai által elért eredményeket minél szélesebb körben publikálja, a magyar felsőoktatás más egységeivel és a szakemberekkel megismertesse a szakkollégiumban folyó munkát.'
+  text: 'A Simonyi Károly Szakkollégium egy hallgatói szakmai szervezet, amely a BME Villamosmérnöki és Informatikai Karán működik. A szakkollégium 2003-ban vette fel Simonyi Károly, a Kar rajongva tisztelt professzora nevét. A Simonyi Károly Szakkollégium célja, hogy tagjai és a Kar hallgatói számára lehetőséget biztosítson az egyetemi képzést kiegészítő ismeretek elsajátítására. Ennek érdekében tanfolyamokat, konferenciákat és más szakmai rendezvényeket szervez, infrastruktúrával támogatja a hallgatók önálló szakmai munkáit. A szakkollégium céljai közé tartozik, hogy a tagjai által elért eredményeket minél szélesebb körben publikálja, a magyar felsőoktatás más egységeivel és a szakemberekkel megismertesse a szakkollégiumban folyó munkát.',
+  wikiUrl: 'https://hu.wikipedia.org/wiki/Simonyi_K%C3%A1roly_Szakkoll%C3%A9gium'
 };
 
 const images: Array<ImageType & { title: string; description: string; width: number; height: number }> = [

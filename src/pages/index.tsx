@@ -158,7 +158,9 @@ function About({ aboutData, imagesData }: { aboutData: { about: AboutType }; ima
         {aboutData.about.title}
       </Text>
       <Box display="grid" gridTemplateColumns={{ base: '1fr', lg: '1fr 1fr' }} gap="4rem">
-        <Text>{aboutData.about.text}</Text>
+        <Text>
+          {aboutData.about.text} <Link href={aboutData.about.wikiUrl}>(Wikipédia)</Link>
+        </Text>
         <ImageBrowser imagesData={imagesData} />
       </Box>
     </Box>
