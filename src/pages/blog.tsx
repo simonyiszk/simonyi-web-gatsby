@@ -32,21 +32,21 @@ export const BlogPreviewCard: React.FC<{ post: BlogPostType & BlogPostFields }> 
             </GatsbyLink>
           </Box>
           <Box zIndex={1} w="100%" h="100%" position="absolute" ml={1} mt={1}>
-            <Box bgGradient="radial(orange.400 1px, transparent 1px)" bgSize={{ base: '1.5rem 1.5rem', sm: '1rem 1rem' }} h="100%" />
+            <Box bgGradient="radial(simonyi_sarga 1px, transparent 1px)" bgSize={{ base: '1.5rem 1.5rem', sm: '1rem 1rem' }} h="100%" />
           </Box>
         </Flex>
         <Flex flex={2.15} direction="column" justifyContent="center" mt={{ base: 3, sm: 0 }} pl={{ base: 0, sm: 3 }}>
           <Heading as={Link} fontSize="2xl" fontWeight="400" lineHeight="tight" to={slug}>
             {title}
           </Heading>
-          <Box mt={1} fontWeight="light" textColor={useColorModeValue('gray.600', 'gray.400')}>
+          <Box mt={1} fontWeight="light" textColor="simonyi_zold_halvany">
             {lead}
           </Box>
         </Flex>
       </Flex>
       <Flex flex={1} h="fit-content" direction="column" justifyContent="flex-end">
-        <HStack flexWrap="wrap" pt={4}>
-          <Text>
+        <HStack justify="space-between" flexWrap="wrap" pt={4}>
+          <Box>
             {new Date(date).toLocaleTimeString('hu-HU', {
               weekday: 'long',
               year: 'numeric',
@@ -55,10 +55,11 @@ export const BlogPreviewCard: React.FC<{ post: BlogPostType & BlogPostFields }> 
               hour: '2-digit',
               minute: '2-digit'
             })}
-          </Text>
-          <Text>&bull;</Text>
-          <ClockIcon fill="currentColor" />
-          <Text>{Math.ceil(minutes)}&nbsp;perc</Text>
+          </Box>
+          <HStack>
+            <ClockIcon fill="currentColor" />
+            <Text>{Math.floor(minutes) + 1}&nbsp;perc</Text>
+          </HStack>
         </HStack>
       </Flex>
     </Flex>
@@ -89,12 +90,13 @@ const BlogPage: React.FC<PageProps<BlogQuery>> = ({ data }) => {
   return (
     <SubpageLayout>
       <Box maxWidth="1496px" mx="auto" p={8}>
+        <Heading mb={16}>Blogposztjaink</Heading>
         <Grid templateColumns={`repeat(${numberOfCols}, 1fr)`} gap={{ base: 24, sm: 10 }}>
           {posts.map((post) => (
             <BlogPreviewCard key={post.id} post={post} />
           ))}
         </Grid>
-        <Box textAlign="right" mt={8}>
+        <Box textAlign="right" mt={16}>
           <Link as={GatsbyLink} fontSize="lg" to="/archive">
             Még több...
           </Link>

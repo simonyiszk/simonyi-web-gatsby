@@ -1,4 +1,4 @@
-import { Box, HStack, Link, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, HStack, Link, Text } from '@chakra-ui/react';
 import { graphql, HeadFC, Link as GatsbyLink, PageProps } from 'gatsby';
 import React from 'react';
 import 'yet-another-react-lightbox/plugins/captions.css';
@@ -10,10 +10,10 @@ import { BlogPostType } from '../types';
 
 export const PostEntry: React.FC<{ post: BlogPostType & BlogPostFields }> = ({ post: { title, date, slug } }) => {
   return (
-    <HStack>
-      <Text>{new Date(date).toLocaleDateString()}</Text>
+    <HStack my={2} fontSize="lg">
+      <Text>&#128221; {new Date(date).toLocaleDateString()} &bull;</Text>
       <Link as={GatsbyLink} to={slug}>
-        {title}
+        {title} &raquo;
       </Link>
     </HStack>
   );
@@ -39,6 +39,12 @@ const ArchivePage: React.FC<PageProps<BlogQuery>> = ({ data }) => {
   return (
     <SubpageLayout>
       <Box maxWidth="1496px" mx="auto" p={8}>
+        <Heading mb={8}>Archívum</Heading>
+        <Flex justify="end" mb={8}>
+          <Link as={GatsbyLink} to="/blog" fontSize="lg">
+            Vissza a bloghoz
+          </Link>
+        </Flex>
         {posts.map((post) => (
           <PostEntry key={post.id} post={post} />
         ))}
@@ -53,7 +59,7 @@ export const Head: HeadFC = () => <SEO title="Archívum" />;
 
 export const query = graphql`
   query ArchiveQuery {
-    allMdx(filter: { frontmatter: { layout: { eq: "blog" } } }) {
+    allMdx(filter: { frontmatter: { layout: { eq: "blog" } } }, sort: { frontmatter: { date: ASC } }) {
       nodes {
         id
         fields {
