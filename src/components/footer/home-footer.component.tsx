@@ -36,7 +36,7 @@ function HomeFooter() {
           <Link color="simonyi_zold" href="https://konferencia.simonyi.bme.hu/" title="konferencia.simonyi.bme.hu" target="_blank">
             Simonyi Konferencia
           </Link>
-          <Link color="simonyi_zold" href="https://simonyi.bme.hu/tanfolyam/" title="simonyi.bme.hu/tanfolyam" target="_blank">
+          <Link color="simonyi_zold" href="https://tanfolyam.simonyi.bme.hu/" title="tanfolyam.simonyi.bme.hu" target="_blank">
             Simonyi tanfolyamok
           </Link>
           <Link
