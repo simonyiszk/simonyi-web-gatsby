@@ -1,12 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { graphql, HeadFC, PageProps } from 'gatsby';
 import { Box, Button, Image, Link, Text } from '@chakra-ui/react';
-import { HomeLayout } from '../layout';
-import { HomeHeader } from '../components/header';
-import { ChevronIcon, SimonyiFullLightIcon } from '../components/icons';
-import { Profile } from '../components/profile';
-import { StudentGroup } from '../components/student-group';
-import Lightbox from 'yet-another-react-lightbox';
+import { default as Lightbox } from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 import Captions from 'yet-another-react-lightbox/plugins/captions';
 import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen';
@@ -16,9 +11,10 @@ import Video from 'yet-another-react-lightbox/plugins/video';
 import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import 'yet-another-react-lightbox/plugins/captions.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
-import { about, groups, images, profiles } from '../utils';
-import { SEO } from '../components/seo';
 import { GatsbyImage, StaticImage } from 'gatsby-plugin-image';
+import { about, groups, images, profiles } from '../utils';
+import { HomeLayout } from '../layout';
+import { HomeHeader, ChevronIcon, SimonyiFullLightIcon, Profile, StudentGroup, SEO } from '../components';
 import { AboutType, ProfileType, StudentGroupType } from '../types';
 
 function Greeting() {
@@ -93,8 +89,8 @@ function Greeting() {
 }
 
 function ImageBrowser({ imagesData }: { imagesData: { images: typeof images } }) {
-  const [index, setIndex] = React.useState(0);
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [index, setIndex] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
 
   const openLightbox = (index = 0) => {
     setIndex(index);
