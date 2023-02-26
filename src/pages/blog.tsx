@@ -7,7 +7,7 @@ import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import 'yet-another-react-lightbox/styles.css';
 import { ClockIcon } from '../components/icons';
 import { SEO } from '../components/seo';
-import { SubpageLayout } from '../layout/subpage.layout';
+import { SubpageLayout } from '../layout';
 import { BlogPostType } from '../types';
 
 export const BlogPreviewCard: React.FC<{ post: BlogPostType & BlogPostFields }> = ({
