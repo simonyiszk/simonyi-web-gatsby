@@ -14,8 +14,9 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "lint:eslint": "eslint --ext .js,.jsx,.ts,.tsx,.mdx .",
-    "lint:prettier": "prettier --check ."
+    "lint:eslint": "eslint --max-warnings 0 .",
+    "lint:prettier": "prettier --check .",
+    "lint:prettier:debug": "prettier --check --debug-check ."
   },
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "3.1.1",

@@ -20,5 +20,10 @@
   "rules": {
     "import/prefer-default-export": 0,
     "prettier/prettier": ["error"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
