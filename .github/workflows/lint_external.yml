@@ -1,20 +1,8 @@
-name: Lint
+name: Lint external PR
 
 on:
-  # Trigger the workflow on push or pull request,
-  # but only for the main branch
-  push:
-    branches:
-      - main
-  # Replace pull_request with pull_request_target if you
-  # plan to use this action with forks, see the Limitations section
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
 
-
-# Down scope as necessary via https://docs.github.com/en/actions/security-guides/automatic-token-authentication#modifying-the-permissions-for-the-github_token
 permissions:
   checks: write
   contents: write
@@ -37,12 +25,11 @@ jobs:
           cache: "yarn"
 
       - name: Install dependencies
-        run: yarn install --immutable --immutable-cache
+        run: yarn install --immutable --immutable-cache --check-cache
 
       - name: Run linters
         uses: wearerequired/lint-action@v2
         with:
           eslint: true
           eslint_args: "--max-warnings 0"
-          eslint_extensions: js,jsx,ts,tsx
           prettier: true

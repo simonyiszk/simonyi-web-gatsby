@@ -1,5 +1,5 @@
-import React from 'react';
 import { format } from 'util';
+import React from 'react';
 import { useSiteMetadata } from '../../hooks';
 
 function SEO({

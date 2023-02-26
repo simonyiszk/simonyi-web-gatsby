@@ -4,7 +4,7 @@ import React from 'react';
 import 'yet-another-react-lightbox/plugins/captions.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import 'yet-another-react-lightbox/styles.css';
-import { SEO } from '../components/seo';
+import { SEO } from '../components';
 import { SubpageLayout } from '../layout/subpage.layout';
 import { BlogPostType } from '../types';
 

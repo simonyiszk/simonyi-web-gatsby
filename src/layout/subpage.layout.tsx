@@ -1,7 +1,6 @@
 import { Box, Flex } from '@chakra-ui/react';
 import React from 'react';
-import { HomeFooter } from '../components/footer';
-import { SubpageHeader } from '../components/header';
+import { HomeFooter, SubpageHeader } from '../components';
 
 function SubpageLayout({ children }: { children: React.ReactNode }) {
   return (

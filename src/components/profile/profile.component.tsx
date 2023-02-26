@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box, Image, Link, Text } from '@chakra-ui/react';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import type { ProfileType } from '../../types';
 import { SocialIcon } from '../icons';
-import { GatsbyImage } from 'gatsby-plugin-image';
 
 function Profile({ name, title, profilePicture, socials }: ProfileType) {
   return (

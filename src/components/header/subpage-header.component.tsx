@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, HStack, Link, VStack } from '@chakra-ui/react';
+import { Box, HStack, Link } from '@chakra-ui/react';
 import { Link as GatsbyLink } from 'gatsby';
 import { SimonyiFullLightIcon } from '../icons';
 
