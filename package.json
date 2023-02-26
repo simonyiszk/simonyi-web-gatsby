@@ -14,7 +14,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "lint:eslint": "eslint --max-warnings 0 .",
+    "lint:eslint": "eslint --max-warnings=0 .",
     "lint:prettier": "prettier --check .",
     "lint:prettier:debug": "prettier --check --debug-check ."
   },
