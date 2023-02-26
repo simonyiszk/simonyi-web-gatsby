@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Heading, HStack, Image, Link, Text, useBreakpointValue, useColorModeValue } from '@chakra-ui/react';
+import { Box, Flex, Grid, Heading, HStack, Image, Link, Text, useBreakpointValue } from '@chakra-ui/react';
 import { graphql, HeadFC, Link as GatsbyLink, PageProps } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
@@ -9,8 +9,6 @@ import { ClockIcon } from '../components/icons';
 import { SEO } from '../components/seo';
 import { SubpageLayout } from '../layout';
 import { BlogPostType } from '../types';
-
-// valami
 
 export const BlogPreviewCard: React.FC<{ post: BlogPostType & BlogPostFields }> = ({
   post: {
