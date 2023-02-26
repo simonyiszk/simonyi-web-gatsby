@@ -262,8 +262,8 @@ const groups: Array<StudentGroupType> = [
       { icon: 'website', link: { url: 'https://kir-dev.hu/', title: 'kir-dev.hu', text: 'https://kir-dev.hu/' } },
       { icon: 'email', link: { url: 'mailto:kir-dev@sch.bme.hu', title: 'kir-dev@sch.bme.hu', text: 'kir-dev@sch.bme.hu' } },
       { icon: 'facebook', link: { url: 'https://facebook.com/kirdevteam/', title: 'facebook.com/kirdevteam', text: '/kirdevteam' } },
-      { icon: 'instagram', link: { url: 'https://www.youtube.com/@kir-dev', title: 'youtube.com/@kir-dev', text: '@kir-dev' } },
-      { icon: 'youtube', link: { url: 'https://www.instagram.com/kir.dev/', title: 'instagram.com/kir.dev', text: '@kir.dev' } }
+      { icon: 'instagram', link: { url: 'https://www.instagram.com/kir.dev/', title: 'instagram.com/kir.dev', text: '@kir.dev' } },
+      { icon: 'youtube', link: { url: 'https://www.youtube.com/@kir-dev', title: 'youtube.com/@kir-dev', text: '@kir-dev' } }
     ]
   },
   {
