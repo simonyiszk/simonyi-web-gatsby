@@ -10,8 +10,6 @@ import { SEO } from '../components/seo';
 import { SubpageLayout } from '../layout';
 import { BlogPostType } from '../types';
 
-
-
 export const BlogPreviewCard: React.FC<{ post: BlogPostType & BlogPostFields }> = ({
   post: {
     featuredImage,
