@@ -37,7 +37,7 @@ jobs:
           cache: "yarn"
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable --immutable-cache --check-cache
 
       - name: Run linters
         uses: wearerequired/lint-action@v2
