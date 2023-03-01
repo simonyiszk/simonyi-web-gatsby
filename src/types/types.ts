@@ -1,5 +1,5 @@
 import { IGatsbyImageData, ImageDataLike } from 'gatsby-plugin-image';
-type SocialIconType = 'email' | 'facebook' | 'github' | 'instagram' | 'linkedin' | 'phone' | 'youtube' | 'website';
+type SocialIconType = 'email' | 'facebook' | 'github' | 'instagram' | 'linkedin' | 'phone' | 'youtube' | 'tiktok' | 'website';
 
 type AboutType = {
   title: string;
