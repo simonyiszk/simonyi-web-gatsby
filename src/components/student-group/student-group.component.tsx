@@ -60,8 +60,8 @@ function StudentGroup({ name, logo, description, socials = [], isDense = false }
         <Box
           width="100%"
           display="flex"
-          justifyContent={isDense ? 'space-evenly' : 'center'}
-          gap={isDense ? 'auto' : '1.25rem'}
+          justifyContent={isDense && !isMobile ? 'space-evenly' : 'center'}
+          gap={isDense && !isMobile ? 'auto' : '1.25rem'}
           flexWrap="wrap"
         >
           {socials.map((social, index) => (
