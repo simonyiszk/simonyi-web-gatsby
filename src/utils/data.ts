@@ -232,8 +232,11 @@ const groups: Array<StudentGroupType> = [
           text: '@budavari_schonherz_studio'
         }
       },
-      { icon: 'youtube', link: { url: 'https://youtube.com/bsstudi0/', title: 'youtube.com/bsstudi0', text: '/bsstudi0' } }
-    ]
+      { icon: 'youtube', link: { url: 'https://youtube.com/bsstudi0/', title: 'youtube.com/bsstudi0', text: '/bsstudi0' } },
+
+      { icon: 'tiktok', link: { url: 'https://www.tiktok.com/@bsstudio_', title: 'tiktok.com/@bsstudio_', text: '/bsstudio_' } }
+    ],
+    isDense: true
   },
   {
     name: 'HA5KFU Rádióamatőr Klub',

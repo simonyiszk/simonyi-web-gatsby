@@ -37,6 +37,7 @@ type StudentGroupType = {
   logo: ImageType;
   description: string;
   socials: SocialType[];
+  isDense?: boolean;
 };
 
 type BlogPostType = {
