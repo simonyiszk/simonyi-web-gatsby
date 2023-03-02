@@ -15,7 +15,8 @@ import {
   SimonyiFullLightIcon,
   SimonyiLogoIcon,
   SocialIcon,
-  YouTubeIcon
+  YouTubeIcon,
+  TikTokIcon
 } from './icons';
 import { Profile } from './profile';
 import { SEO } from './seo';
@@ -42,5 +43,6 @@ export {
   SocialIcon,
   StudentGroup,
   YouTubeIcon,
+  TikTokIcon,
   SubpageHeader
 };

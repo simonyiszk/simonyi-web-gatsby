@@ -1,5 +1,5 @@
 import { SimonyiFullDarkIcon, SimonyiFullLightIcon, SimonyiLogoIcon } from './bme';
-import { EmailIcon, FacebookIcon, GitHubIcon, GlobeIcon, InstagramIcon, LinkedInIcon, PhoneIcon, YouTubeIcon } from './social';
+import { EmailIcon, FacebookIcon, GitHubIcon, GlobeIcon, InstagramIcon, LinkedInIcon, PhoneIcon, YouTubeIcon, TikTokIcon } from './social';
 import { ChevronIcon } from './chevron-icon.component';
 import { IncreaseIcon } from './increase-icon.component';
 import { SocialIcon } from './social-icon.component';
@@ -16,6 +16,7 @@ export {
   LinkedInIcon,
   PhoneIcon,
   YouTubeIcon,
+  TikTokIcon,
   SimonyiFullDarkIcon,
   SimonyiFullLightIcon,
   SimonyiLogoIcon,

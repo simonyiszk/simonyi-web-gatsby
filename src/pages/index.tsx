@@ -179,7 +179,14 @@ function StudentGroups({ studentGroupsData }: { studentGroupsData: { groups: Arr
         width="100%"
       >
         {studentGroupsData.groups.map((group, index) => (
-          <StudentGroup key={index} name={group.name} description={group.description} logo={group.logo} socials={group.socials} />
+          <StudentGroup
+            key={index}
+            name={group.name}
+            description={group.description}
+            logo={group.logo}
+            socials={group.socials}
+            isDense={group.isDense}
+          />
         ))}
       </Box>
     </Box>

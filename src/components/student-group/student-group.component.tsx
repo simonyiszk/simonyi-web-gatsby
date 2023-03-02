@@ -3,7 +3,7 @@ import { Box, Link, Text, Image, useBreakpointValue } from '@chakra-ui/react';
 import { ChevronIcon, SocialIcon } from '../icons';
 import type { StudentGroupType } from '../../types';
 
-function StudentGroup({ name, logo, description, socials = [] }: StudentGroupType) {
+function StudentGroup({ name, logo, description, socials = [], isDense = false }: StudentGroupType & { isDense?: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
   const isMobile = useBreakpointValue({ base: true, md: false }) as boolean;
 
@@ -57,7 +57,13 @@ function StudentGroup({ name, logo, description, socials = [] }: StudentGroupTyp
         )}
       </Box>
       {(!isMobile || isOpen) && (
-        <Box display="flex" justifyContent="center" gap="1.25rem" flexWrap="wrap">
+        <Box
+          width="100%"
+          display="flex"
+          justifyContent={isDense && !isMobile ? 'space-evenly' : 'center'}
+          gap={isDense && !isMobile ? 'auto' : '1.25rem'}
+          flexWrap="wrap"
+        >
           {socials.map((social, index) => (
             <Link
               href={social.link.url}
