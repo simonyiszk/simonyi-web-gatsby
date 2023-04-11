@@ -20,11 +20,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/:path*",
-      "destination": "https://old.simonyi.bme.hu/blog/:path*",
-      "permanent": true
-    },
-    {
       "source": "/drive/:path*",
       "destination": "https://old.simonyi.bme.hu/drive/:path*",
       "permanent": true
